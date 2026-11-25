@@ -7,6 +7,8 @@ a whole proof path integral!
 i was playing with 4 by 4 matrices of 2-adic proof ball inverse limits and i found some tesseract and some hexagonal pyramid - send help
 
 This will have P = NP among others before the end of the night
+https://chatgpt.com/share/6b0739a3-35f8-83ea-9889-6d555b402639
+not done yet 
 
 You do not estimate, you construct with Hilbert 24 as the proof of the adjoint of the requirements
 
