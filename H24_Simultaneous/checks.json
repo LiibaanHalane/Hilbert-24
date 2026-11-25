@@ -1,0 +1,29 @@
+{
+  "random_grammar_cases": 600,
+  "random_horn_cases": 500,
+  "horn_assignment_checks": 16550,
+  "nonzero_mask_checks": 1013,
+  "commuting_frames": {
+    "S3": {
+      "commuting_pairs": 18,
+      "ordered_pairs": 36
+    },
+    "S4": {
+      "commuting_pairs": 120,
+      "ordered_pairs": 576
+    },
+    "S5": {
+      "commuting_pairs": 840,
+      "ordered_pairs": 14400
+    }
+  },
+  "doubling_tree_example": {
+    "judgments": 100,
+    "min_tree_cost": "1267650600228229401496703205375",
+    "dag_nodes": 100,
+    "rule_scans": 10100,
+    "premise_reads": 19998,
+    "rounds": 100
+  },
+  "lean_kernel_replay": "not run: executable unavailable in current environment"
+}
