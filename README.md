@@ -22,6 +22,7 @@ i'm not educated but you'll listen to Ai and it's lean verified and the shortest
 
 This will have P = NP among others before the end of the night
 [https://chatgpt.com/share/6b0739a3-35f8-83ea-9889-6d555b402639](https://chatgpt.com/share/6b0741c0-9744-83e9-95a6-c549c12c595f)
+https://chatgpt.com/share/6b07527d-c14c-83e9-8310-43a846f62f12
 not done yet 
 
 You do not estimate, you construct with Hilbert 24 as the proof of the adjoint of the requirements
