@@ -13,6 +13,6 @@ You do not estimate, you construct with Hilbert 24 as the proof of the adjoint o
 pins, when they fall, that's how you get profinite poles? probability and disc and vertical point - Peirce pierce perice. per ice, per ?/i?c?e? - factoring out a linear equation, beta reduction, guard, conditions, 3 signs, language,  can we get all the fundamental things we need from pi, i, c, and e (given the above)?
 
 
-it's nearly done, I'm so excited to reterritorialize. This has been a doozy.
+it's nearly done, I'm so excited to reterritorialize. This has been a doozy. Never Again.
 
 https://www.youtube.com/watch?v=NhaNvguYE6I
