@@ -11,3 +11,6 @@ This will have P = NP among others before the end of the night
 You do not estimate, you construct with Hilbert 24 as the proof of the adjoint of the requirements
 
 pins, when they fall, that's how you get profinite poles? probability and disc and vertical point - Peirce pierce perice. per ice, per ?/i?c?e? - factoring out a linear equation, beta reduction, guard, conditions, 3 signs, language
+
+
+it's nearly done, I'm so excited to reterritorialize. This has been a doosy
