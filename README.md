@@ -8,7 +8,7 @@ i was playing with 4 by 4 matrices of 2-adic proof ball inverse limits and i fou
 
 Hilbert 24 reduces meticulous mathematical proof to appropriate articulation. 
 it is also a constructive proof of Yang Mills mass gap and existance, and 6 other fashionable problems.
-i felt the metaphysical implications of Howard-Curry-Lambek were under appreciated as well as the role of physics in metaphysics (and vice versa, i started with dependent origination, determinate negation, and constant contradiction. Some call it paranormal logic. But i was doing something else with it and stumbbled deep down, and here's the hole, a hole in the plato cave, many forms) 
+i felt the metaphysical implications of Howard-Curry-Lambek were under appreciated as well as the role of physics in metaphysics (and vice versa, i started with dependent origination, determinate negation, and constant contradiction. Some call it paranormal logic. But i was doing something else with it and stumbbled deep down, and here's the hole, a hole in the plato cave, many forms). Failed checks will return a counterexample or an unresolved obligation, rather than a proof.
 
 Reversible computation - fredkin-toffoli amortization of computation and the logical necessity of time and triple adjoint functors
 
