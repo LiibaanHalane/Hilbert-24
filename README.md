@@ -17,7 +17,7 @@ Reversible computation - fredkin-toffoli amortization of computation and the log
 i'm not educated but you'll listen to Ai and it's lean verified and the shortest possible i believe. i got me an ai too. it is not our first and not our last artifact. - i only mean this later
 
 This will have P = NP among others before the end of the night
-https://chatgpt.com/share/6b0739a3-35f8-83ea-9889-6d555b402639
+[https://chatgpt.com/share/6b0739a3-35f8-83ea-9889-6d555b402639](https://chatgpt.com/share/6b0741c0-9744-83e9-95a6-c549c12c595f)
 not done yet 
 
 You do not estimate, you construct with Hilbert 24 as the proof of the adjoint of the requirements
