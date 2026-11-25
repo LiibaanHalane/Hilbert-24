@@ -14,7 +14,10 @@ pins, when they fall, that's how you get profinite poles? probability and disc a
 
 
 it's nearly done, I'm so excited to reterritorialize. This has been a doozy. Never Again.
+
 رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِّلْقَوْمِ الظَّالِمِينَ وَنَجِّنَا بِرَحْمَتِكَ مِنَ الْقَوْمِ الْكَافِرِينَ
+
 اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا عَمِلْتُ، وَمِنْ شَرِّ مَا لَمْ أَعْمَلْ
+
 https://www.youtube.com/watch?v=NhaNvguYE6I
 
