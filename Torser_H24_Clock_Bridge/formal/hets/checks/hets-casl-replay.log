@@ -1,0 +1,854 @@
+Analyzing library Native_Clock_Torser
+Downloading Native_Shortest_Proof ...
+Analyzing library Native_Shortest_Proof
+logic CASL
+Analyzing spec WitnessCoverData
+Analyzing spec WitnessCoverProof
+Analyzing spec NativeTileData
+Analyzing spec NativeTileProof
+Analyzing spec FixedVerifierMinimum
+Analyzing spec NativeRoot
+Analyzing spec NativeRootMatrix
+Analyzing spec OriginalClauseCover
+Analyzing spec OriginalCutExactness
+Analyzing spec OriginalCutMatrix
+Analyzing spec SharedProofFrontier
+Analyzing spec ObservationCut
+Analyzing spec ExplicitCutWork
+Analyzing spec ObservedCutMatrix
+Analyzing spec OriginalCechFibre
+Analyzing spec OriginalSelectorSlack
+Analyzing spec CechReversibleGates
+Analyzing spec FredkinToffoliClauseSelector
+Analyzing spec IndexedSelectorLightCone
+Analyzing spec TemporalGateLightCone
+Analyzing spec FixedMonitorClock
+Analyzing spec FixedCechClock
+Analyzing spec OrdinaryDecisionProjection
+Analyzing spec CechGateReturn
+Analyzing spec IntegerTelescopeGluing
+Analyzing spec PaddedTelescopeDigits
+Analyzing spec TelescopeAddressPeriod
+Analyzing spec TelescopeAffineBlocks
+Analyzing spec PhantomCechTransport
+Analyzing spec IntegralPhantomTransport
+Analyzing spec TelescopeFrobeniusSpectrum
+Analyzing spec YangDyadicHeatTrace
+Analyzing spec CollatzSpectralReturn
+Analyzing spec CollatzParityTelescopeReturn
+Analyzing spec Rule30ActualSpectralReturn
+Analyzing spec Rule30ActualPeriodArithmetic
+Analyzing spec YangBernsteinPositiveFilter
+Analyzing spec YangBernsteinBandReturn
+Analyzing spec YangDyadicBand
+Analyzing spec HigherToposMarks
+Analyzing spec YangPhysicalProbeDescent
+Analyzing spec WilsonStrongCouplingAlgebra
+Analyzing spec WilsonStrongCouplingClock
+Analyzing spec CentralQuotientWilsonReturn
+Analyzing spec PhysicalQuotientScore
+Analyzing spec WilsonPathScore
+... loaded Native_Shortest_Proof
+logic CASL
+Analyzing spec NativeClockCoefficientData
+Analyzing spec NativeClockConcreteMatrix
+Analyzing spec NativeClockAdjointInterpretation
+Analyzing spec NativeClockSixFrames
+Analyzing spec NativeClockFrameInterpretation
+Analyzing spec NativeClockTorserState
+Analyzing spec NativeClockTorserRun
+Analyzing spec NativeClockH24Rules
+Analyzing spec NativeClockUniformTarget
+/workspace/scratch/e609d6fab5c5/bridge_h24/agent_native/Native_Clock_Torser> dg basic NativeClockConcreteMatrix
+file://Native_Clock_Torser_NativeClockConcreteMatrix> set include-theorems true
+file://Native_Clock_Torser_NativeClockConcreteMatrix> set time-limit 4
+file://Native_Clock_Torser_NativeClockConcreteMatrix> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set goals nt_native_decoder_exact
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set axioms nc_rho_def nc_delta_def nc_native_constructor_cases
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prove
+Analyzing node NativeClockConcreteMatrix
+selectedGoals:
+nt_native_decoder_exact
+
+Goal nt_native_decoder_exact is proved.
+Goal nt_native_decoder_exact used 
+sign_op_nc0 : fof(sign_op_nc0, axiom, sort_NCoeff(op_nc0)).
+ sign_op_ncAdd : fof(sign_op_ncAdd, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NCoeff(VAR_X1) & sort_NCoeff(VAR_X2)) =>
+     sort_NCoeff(op_ncAdd(VAR_X1, VAR_X2)))).
+ sign_op_ncNeg : fof(sign_op_ncNeg, axiom,
+    ! [VAR_X1]:
+    ((sort_NCoeff(VAR_X1)) => sort_NCoeff(op_ncNeg(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set goals nt_native_representation_faithful
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set axioms nt_native_decoder_exact
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prove
+Analyzing node NativeClockConcreteMatrix
+selectedGoals:
+nt_native_representation_faithful
+
+Goal nt_native_representation_faithful is proved.
+Goal nt_native_representation_faithful used 
+
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set goals nt_operator_rho_preserves_ordered_product
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set axioms nc_add_assoc nc_add_comm nc_add_zero nc_add_inverse nc_mul_left_one nc_mul_right_one nc_mul_left_zero nc_mul_right_zero nc_negative_sum nc_negative_twice nc_negative_zero nc_negative_left nc_negative_right nc_left_distributes nc_right_distributes nc_native_product_def nc_matrix_product_def nc_rho_def nc_native_constructor_cases
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prove
+Analyzing node NativeClockConcreteMatrix
+selectedGoals:
+nt_operator_rho_preserves_ordered_product
+
+Goal nt_operator_rho_preserves_ordered_product is still open.
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set goals nt_context_work_cocycle_is_native_product
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set axioms nc_add_assoc nc_add_comm nc_add_zero nc_add_inverse nc_mul_left_one nc_mul_right_one nc_mul_left_zero nc_mul_right_zero nc_negative_sum nc_negative_twice nc_negative_zero nc_negative_left nc_negative_right nc_left_distributes nc_right_distributes nc_weighted_product_def nc_weighted_matrix_def nc_rho_def nc_matrix_product_def nc_weighted_constructor_cases
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prove
+Analyzing node NativeClockConcreteMatrix
+selectedGoals:
+nt_context_work_cocycle_is_native_product
+
+Goal nt_context_work_cocycle_is_native_product is still open.
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set goals nt_source_natural_clock_adds_in_native_block
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set axioms nc_add_assoc nc_add_comm nc_add_zero nc_add_inverse nc_mul_left_one nc_mul_right_one nc_mul_left_zero nc_mul_right_zero nc_negative_sum nc_negative_twice nc_negative_zero nc_negative_left nc_negative_right nc_left_distributes nc_right_distributes nc_clock_def nc_rho_def nc_matrix_product_def nc_nat_sum_interpretation
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prove
+Analyzing node NativeClockConcreteMatrix
+selectedGoals:
+nt_source_natural_clock_adds_in_native_block
+
+Goal nt_source_natural_clock_adds_in_native_block is still open.
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set goals nt_native_clock_reflects_original_integer
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> set axioms nc_clock_def nt_native_representation_faithful ga_injective_ncNative nc_nat_embedding_injective
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> prove
+Analyzing node NativeClockConcreteMatrix
+selectedGoals:
+nt_native_clock_reflects_original_integer
+
+Goal nt_native_clock_reflects_original_integer is proved.
+Goal nt_native_clock_reflects_original_integer used 
+sign_op_ncNative : fof(sign_op_ncNative, axiom,
+    ! [VAR_X1, VAR_X2, VAR_X3, VAR_X4, VAR_X5, VAR_X6]:
+    ((sort_NCoeff(VAR_X1) & sort_NCoeff(VAR_X2) & sort_NCoeff(VAR_X3) &
+      sort_NCoeff(VAR_X4) & sort_NCoeff(VAR_X5) & sort_NCoeff(VAR_X6))
+     =>
+     sort_NCNative(op_ncNative(VAR_X1, VAR_X2, VAR_X3, VAR_X4, VAR_X5,
+                               VAR_X6)))).
+ sign_op_ncOfNat : fof(sign_op_ncOfNat, axiom,
+    ! [VAR_X1]:
+    ((sort_VNat(VAR_X1)) => sort_NCoeff(op_ncOfNat(VAR_X1)))).
+ sign_op_nc1 : fof(sign_op_nc1, axiom, sort_NCoeff(op_nc1)).
+ sign_op_nc0 : fof(sign_op_nc0, axiom, sort_NCoeff(op_nc0)).
+
+file://Native_Clock_Torser_NativeClockConcreteMatrix*> dg basic NativeClockAdjointInterpretation
+file://Native_Clock_Torser_NativeClockAdjointInterpretation> set include-theorems true
+file://Native_Clock_Torser_NativeClockAdjointInterpretation> set time-limit 4
+file://Native_Clock_Torser_NativeClockAdjointInterpretation> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> set goals nt_native_dagger_reverses_composition
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> set axioms nc_dagger_def nc_matrix_associative nc_matrix_star_reverses nc_gram_inverse_right nc_matrix_right_identity nc_matrix_left_identity
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> prove
+Analyzing node NativeClockAdjointInterpretation
+selectedGoals:
+nt_native_dagger_reverses_composition
+
+Goal nt_native_dagger_reverses_composition is still open.
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> set goals nt_native_dagger_involutive
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> set axioms nc_dagger_def nc_matrix_associative nc_matrix_star_reverses nc_matrix_star_involutive nc_gram_self_adjoint nc_gram_inverse_self_adjoint nc_gram_inverse_left nc_gram_inverse_right nc_matrix_left_identity nc_matrix_right_identity
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> prove
+Analyzing node NativeClockAdjointInterpretation
+selectedGoals:
+nt_native_dagger_involutive
+
+Goal nt_native_dagger_involutive is proved.
+Goal nt_native_dagger_involutive used 
+sign_op_ncJ : fof(sign_op_ncJ, axiom, sort_NCMatrix(op_ncJ)).
+ sign_op_ncJInv : fof(sign_op_ncJInv, axiom, sort_NCMatrix(op_ncJInv)).
+ sign_op_ncDagger : fof(sign_op_ncDagger, axiom,
+    ! [VAR_X1]:
+    ((sort_NCMatrix(VAR_X1)) => sort_NCMatrix(op_ncDagger(VAR_X1)))).
+ sign_op_ncMStar : fof(sign_op_ncMStar, axiom,
+    ! [VAR_X1]:
+    ((sort_NCMatrix(VAR_X1)) => sort_NCMatrix(op_ncMStar(VAR_X1)))).
+ sign_op_ncMMul : fof(sign_op_ncMMul, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NCMatrix(VAR_X1) & sort_NCMatrix(VAR_X2)) =>
+     sort_NCMatrix(op_ncMMul(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockAdjointInterpretation*> dg basic NativeClockFrameInterpretation
+file://Native_Clock_Torser_NativeClockFrameInterpretation> set include-theorems true
+file://Native_Clock_Torser_NativeClockFrameInterpretation> set time-limit 4
+file://Native_Clock_Torser_NativeClockFrameInterpretation> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> set goals nt_framed_clock_composition_cancels_middle_chart
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> set axioms nt_frame_change_def nc_matrix_associative nt_frame_matrix_left_inverse nc_matrix_left_identity nc_matrix_right_identity
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> prove
+Analyzing node NativeClockFrameInterpretation
+selectedGoals:
+nt_framed_clock_composition_cancels_middle_chart
+
+Goal nt_framed_clock_composition_cancels_middle_chart is still open.
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> set goals nt_framed_native_operator_returns_exactly
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> set axioms nt_frame_change_def nc_matrix_associative nt_frame_matrix_left_inverse nt_frame_matrix_right_inverse nc_matrix_left_identity nc_matrix_right_identity nt_actual_six_frame_cases nt_frame_inverse_e nt_frame_inverse_r nt_frame_inverse_rr nt_frame_inverse_s nt_frame_inverse_sr nt_frame_inverse_srr
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> prove
+Analyzing node NativeClockFrameInterpretation
+selectedGoals:
+nt_framed_native_operator_returns_exactly
+
+Goal nt_framed_native_operator_returns_exactly is still open.
+file://Native_Clock_Torser_NativeClockFrameInterpretation*> dg basic NativeClockTorserState
+file://Native_Clock_Torser_NativeClockTorserState> set include-theorems true
+file://Native_Clock_Torser_NativeClockTorserState> set time-limit 4
+file://Native_Clock_Torser_NativeClockTorserState> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_full_original_state_roundtrip
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_encode_state_definition nt_decode_state_definition
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_full_original_state_roundtrip
+
+Goal nt_full_original_state_roundtrip is proved.
+Goal nt_full_original_state_roundtrip used 
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_full_native_state_roundtrip
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_encode_state_definition nt_decode_state_definition nt_decode_frame_definition nt_native_state_constructor_cases
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_full_native_state_roundtrip
+
+Goal nt_full_native_state_roundtrip is proved.
+Goal nt_full_native_state_roundtrip used 
+sign_op_ntDecodeState : fof(sign_op_ntDecodeState, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTSourceRecord(op_ntDecodeState(VAR_X1)))).
+ sign_op_ntFrame : fof(sign_op_ntFrame, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTFrame(op_ntFrame(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_same_actual_source_step
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_encode_state_definition nt_decode_state_definition nt_native_step_definition
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_same_actual_source_step
+
+Goal nt_same_actual_source_step is proved.
+Goal nt_same_actual_source_step used 
+sign_op_ntTick : fof(sign_op_ntTick, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_NTSourceRecord(op_ntTick(VAR_X1)))).
+ sign_op_ntFrameMul : fof(sign_op_ntFrameMul, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTFrame(VAR_X1) & sort_NTFrame(VAR_X2)) =>
+     sort_NTFrame(op_ntFrameMul(VAR_X1, VAR_X2)))).
+ sign_op_ntEventFrame : fof(sign_op_ntEventFrame, axiom,
+    ! [VAR_X1]:
+    ((sort_NTEvent(VAR_X1)) => sort_NTFrame(op_ntEventFrame(VAR_X1)))).
+ sign_op_ntLocalEvent : fof(sign_op_ntLocalEvent, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) =>
+     sort_NTEvent(op_ntLocalEvent(VAR_X1)))).
+ sign_op_ntsMachine : fof(sign_op_ntsMachine, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_NTMState(op_ntsMachine(VAR_X1)))).
+ sign_op_ntFrame : fof(sign_op_ntFrame, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTFrame(op_ntFrame(VAR_X1)))).
+ sign_op_ntDecodeState : fof(sign_op_ntDecodeState, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTSourceRecord(op_ntDecodeState(VAR_X1)))).
+ sign_op_ntEncodeState : fof(sign_op_ntEncodeState, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTSourceRecord(VAR_X1) & sort_NTFrame(VAR_X2)) =>
+     sort_NTNativeState(op_ntEncodeState(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_history_returns_the_whole_original_state
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_tick_definition nt_undo_definition nt_local_record_inverse nt_source_record_constructor_cases
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_history_returns_the_whole_original_state
+
+Goal nt_history_returns_the_whole_original_state is proved.
+Goal nt_history_returns_the_whole_original_state used 
+sign_op_ntLocalEvent : fof(sign_op_ntLocalEvent, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) =>
+     sort_NTEvent(op_ntLocalEvent(VAR_X1)))).
+ sign_op_ntAdvance : fof(sign_op_ntAdvance, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) => sort_NTMState(op_ntAdvance(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_tick_retains_original_input
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_native_step_definition nt_tick_definition nt_source_definition ga_selector_ntsInput nt_native_state_constructor_cases nt_source_record_constructor_cases
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_tick_retains_original_input
+
+Goal nt_tick_retains_original_input is proved.
+Goal nt_tick_retains_original_input used 
+sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_ntHNil : fof(sign_op_ntHNil, axiom, sort_NTHistory(op_ntHNil)).
+ sign_non_empty_sort_NTMState : fof(sign_non_empty_sort_NTMState, axiom,
+    ? [VAR_X]: (sort_NTMState(VAR_X))).
+ sign_non_empty_sort_VInput : fof(sign_non_empty_sort_VInput, axiom,
+    ? [VAR_X]: (sort_VInput(VAR_X))).
+ sign_op_ntSRR : fof(sign_op_ntSRR, axiom, sort_NTFrame(op_ntSRR)).
+ sign_non_empty_sort_NTSourceRecord : fof(sign_non_empty_sort_NTSourceRecord, axiom,
+    ? [VAR_X]: (sort_NTSourceRecord(VAR_X))).
+ sign_op_ntAdvance : fof(sign_op_ntAdvance, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) => sort_NTMState(op_ntAdvance(VAR_X1)))).
+ sign_op_ntEventFrame : fof(sign_op_ntEventFrame, axiom,
+    ! [VAR_X1]:
+    ((sort_NTEvent(VAR_X1)) => sort_NTFrame(op_ntEventFrame(VAR_X1)))).
+ sign_op_ntLocalEvent : fof(sign_op_ntLocalEvent, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) =>
+     sort_NTEvent(op_ntLocalEvent(VAR_X1)))).
+ sign_op_ntTick : fof(sign_op_ntTick, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_NTSourceRecord(op_ntTick(VAR_X1)))).
+ sign_op_ntsInput : fof(sign_op_ntsInput, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_VInput(op_ntsInput(VAR_X1)))).
+ sign_op_ntsMachine : fof(sign_op_ntsMachine, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_NTMState(op_ntsMachine(VAR_X1)))).
+ sign_op_vS : fof(sign_op_vS, axiom,
+    ! [VAR_X1]: ((sort_VNat(VAR_X1)) => sort_VNat(op_vS(VAR_X1)))).
+ sign_op_ntFrameMul : fof(sign_op_ntFrameMul, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTFrame(VAR_X1) & sort_NTFrame(VAR_X2)) =>
+     sort_NTFrame(op_ntFrameMul(VAR_X1, VAR_X2)))).
+ sign_op_ntHCons : fof(sign_op_ntHCons, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTEvent(VAR_X1) & sort_NTHistory(VAR_X2)) =>
+     sort_NTHistory(op_ntHCons(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_tick_is_one_actual_original_tick
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_native_step_definition nt_tick_definition nt_clock_record_definition ga_selector_ntsClock nt_native_state_constructor_cases nt_source_record_constructor_cases
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_tick_is_one_actual_original_tick
+
+Goal nt_tick_is_one_actual_original_tick is proved.
+Goal nt_tick_is_one_actual_original_tick used 
+sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_ntHNil : fof(sign_op_ntHNil, axiom, sort_NTHistory(op_ntHNil)).
+ sign_non_empty_sort_NTMState : fof(sign_non_empty_sort_NTMState, axiom,
+    ? [VAR_X]: (sort_NTMState(VAR_X))).
+ sign_non_empty_sort_VInput : fof(sign_non_empty_sort_VInput, axiom,
+    ? [VAR_X]: (sort_VInput(VAR_X))).
+ sign_op_ntSRR : fof(sign_op_ntSRR, axiom, sort_NTFrame(op_ntSRR)).
+ sign_non_empty_sort_NTSourceRecord : fof(sign_non_empty_sort_NTSourceRecord, axiom,
+    ? [VAR_X]: (sort_NTSourceRecord(VAR_X))).
+ sign_op_ntAdvance : fof(sign_op_ntAdvance, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) => sort_NTMState(op_ntAdvance(VAR_X1)))).
+ sign_op_ntEventFrame : fof(sign_op_ntEventFrame, axiom,
+    ! [VAR_X1]:
+    ((sort_NTEvent(VAR_X1)) => sort_NTFrame(op_ntEventFrame(VAR_X1)))).
+ sign_op_ntLocalEvent : fof(sign_op_ntLocalEvent, axiom,
+    ! [VAR_X1]:
+    ((sort_NTMState(VAR_X1)) =>
+     sort_NTEvent(op_ntLocalEvent(VAR_X1)))).
+ sign_op_ntTick : fof(sign_op_ntTick, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_NTSourceRecord(op_ntTick(VAR_X1)))).
+ sign_op_ntsClock : fof(sign_op_ntsClock, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) => sort_VNat(op_ntsClock(VAR_X1)))).
+ sign_op_ntsMachine : fof(sign_op_ntsMachine, axiom,
+    ! [VAR_X1]:
+    ((sort_NTSourceRecord(VAR_X1)) =>
+     sort_NTMState(op_ntsMachine(VAR_X1)))).
+ sign_op_vS : fof(sign_op_vS, axiom,
+    ! [VAR_X1]: ((sort_VNat(VAR_X1)) => sort_VNat(op_vS(VAR_X1)))).
+ sign_op_ntFrameMul : fof(sign_op_ntFrameMul, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTFrame(VAR_X1) & sort_NTFrame(VAR_X2)) =>
+     sort_NTFrame(op_ntFrameMul(VAR_X1, VAR_X2)))).
+ sign_op_ntHCons : fof(sign_op_ntHCons, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTEvent(VAR_X1) & sort_NTHistory(VAR_X2)) =>
+     sort_NTHistory(op_ntHCons(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_initial_retains_original_input
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_initial_definition nt_source_definition ga_selector_ntsInput
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_initial_retains_original_input
+
+Goal nt_initial_retains_original_input is proved.
+Goal nt_initial_retains_original_input used 
+sign_op_ntE : fof(sign_op_ntE, axiom, sort_NTFrame(op_ntE)).
+ sign_op_ntSourceRecord : fof(sign_op_ntSourceRecord, axiom,
+    ! [VAR_X1, VAR_X2, VAR_X3, VAR_X4]:
+    ((sort_VInput(VAR_X1) & sort_NTMState(VAR_X2) &
+      sort_NTHistory(VAR_X3) & sort_VNat(VAR_X4))
+     =>
+     sort_NTSourceRecord(op_ntSourceRecord(VAR_X1, VAR_X2, VAR_X3,
+                                           VAR_X4)))).
+ sign_op_ntInitialMachine : fof(sign_op_ntInitialMachine, axiom,
+    ! [VAR_X1]:
+    ((sort_VInput(VAR_X1)) =>
+     sort_NTMState(op_ntInitialMachine(VAR_X1)))).
+ sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_ntHNil : fof(sign_op_ntHNil, axiom, sort_NTHistory(op_ntHNil)).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_initial_clock_zero
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms nt_initial_definition nt_clock_record_definition ga_selector_ntsClock
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_initial_clock_zero
+
+Goal nt_initial_clock_zero is proved.
+Goal nt_initial_clock_zero used 
+sign_op_ntE : fof(sign_op_ntE, axiom, sort_NTFrame(op_ntE)).
+ sign_op_ntSourceRecord : fof(sign_op_ntSourceRecord, axiom,
+    ! [VAR_X1, VAR_X2, VAR_X3, VAR_X4]:
+    ((sort_VInput(VAR_X1) & sort_NTMState(VAR_X2) &
+      sort_NTHistory(VAR_X3) & sort_VNat(VAR_X4))
+     =>
+     sort_NTSourceRecord(op_ntSourceRecord(VAR_X1, VAR_X2, VAR_X3,
+                                           VAR_X4)))).
+ sign_op_ntInitialMachine : fof(sign_op_ntInitialMachine, axiom,
+    ! [VAR_X1]:
+    ((sort_VInput(VAR_X1)) =>
+     sort_NTMState(op_ntInitialMachine(VAR_X1)))).
+ sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_ntHNil : fof(sign_op_ntHNil, axiom, sort_NTHistory(op_ntHNil)).
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_operational_fredkin_original_wires
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms rg_fredkin_inverse
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_operational_fredkin_original_wires
+
+Goal nt_operational_fredkin_original_wires is proved.
+Goal nt_operational_fredkin_original_wires used 
+
+file://Native_Clock_Torser_NativeClockTorserState*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserState*> set goals nt_operational_toffoli_original_wires
+file://Native_Clock_Torser_NativeClockTorserState*> set axioms rg_toffoli_inverse
+file://Native_Clock_Torser_NativeClockTorserState*> prove
+Analyzing node NativeClockTorserState
+selectedGoals:
+nt_operational_toffoli_original_wires
+
+Goal nt_operational_toffoli_original_wires is proved.
+Goal nt_operational_toffoli_original_wires used 
+
+file://Native_Clock_Torser_NativeClockTorserState*> dg basic NativeClockTorserRun
+file://Native_Clock_Torser_NativeClockTorserRun> set include-theorems true
+file://Native_Clock_Torser_NativeClockTorserRun> set time-limit 4
+file://Native_Clock_Torser_NativeClockTorserRun> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_clock_identity_case
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_complete_run_invariant_definition nt_identity_begin nt_identity_end nt_identity_work cd_add_z
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_clock_identity_case
+
+Goal nt_clock_identity_case is proved.
+Goal nt_clock_identity_case used 
+sign_op_ntIdentity : fof(sign_op_ntIdentity, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTProof(op_ntIdentity(VAR_X1)))).
+ sign_op_ntClock : fof(sign_op_ntClock, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) => sort_VNat(op_ntClock(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_clock_actual_tick_case
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_complete_run_invariant_definition nt_primitive_begin nt_primitive_end nt_primitive_work nt_tick_retains_original_input nt_tick_is_one_actual_original_tick cd_add_s cd_add_z
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_clock_actual_tick_case
+
+Goal nt_clock_actual_tick_case is proved.
+Goal nt_clock_actual_tick_case used 
+sign_op_ntPrimitive : fof(sign_op_ntPrimitive, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTProof(op_ntPrimitive(VAR_X1)))).
+ sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_ntClock : fof(sign_op_ntClock, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) => sort_VNat(op_ntClock(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_clock_composition_case
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_complete_run_invariant_definition nt_compose_begin nt_compose_end nt_costed_composition_work nt_costed_composition_rule nt_nat_associativity_interpretation
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_clock_composition_case
+
+Goal nt_clock_composition_case is proved.
+Goal nt_clock_composition_case used 
+sign_op_ntBegin : fof(sign_op_ntBegin, axiom,
+    ! [VAR_X1]:
+    ((sort_NTProof(VAR_X1)) =>
+     sort_NTNativeState(op_ntBegin(VAR_X1)))).
+ sign_op_ntClock : fof(sign_op_ntClock, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) => sort_VNat(op_ntClock(VAR_X1)))).
+ sign_op_ntWork : fof(sign_op_ntWork, axiom,
+    ! [VAR_X1]:
+    ((sort_NTProof(VAR_X1)) => sort_VNat(op_ntWork(VAR_X1)))).
+ sign_op_ntCompose : fof(sign_op_ntCompose, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTProof(VAR_X1) & sort_NTProof(VAR_X2)) =>
+     sort_NTProof(op_ntCompose(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_clock_presentation_case
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_complete_run_invariant_definition nt_presentation_begin nt_presentation_end nt_presentation_no_executed_operation nt_pure_presentation_rule
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_clock_presentation_case
+
+Goal nt_clock_presentation_case is proved.
+Goal nt_clock_presentation_case used 
+sign_op_ntReexpress : fof(sign_op_ntReexpress, axiom,
+    ! [VAR_X1]:
+    ((sort_NTProof(VAR_X1)) => sort_NTProof(op_ntReexpress(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_clock_terminal_case
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_complete_run_invariant_definition nt_terminal_begin nt_terminal_end nt_terminal_proof_no_hidden_execution nt_terminal_original_receipt_rule
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_clock_terminal_case
+
+Goal nt_clock_terminal_case is proved.
+Goal nt_clock_terminal_case used 
+sign_op_ntClose : fof(sign_op_ntClose, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTProof(VAR_X1) & sort_RReceipt(VAR_X2)) =>
+     sort_NTProof(op_ntClose(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_complete_original_clock_invariant
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_free_execution_proof_induction nt_clock_identity_case nt_clock_actual_tick_case nt_clock_composition_case nt_clock_presentation_case nt_clock_terminal_case
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_complete_original_clock_invariant
+
+Goal nt_complete_original_clock_invariant is proved.
+Goal nt_complete_original_clock_invariant used 
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_complete_run_packet_return
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_run_codec_retains_complete_proof nt_run_decoder_retains_complete_proof
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_complete_run_packet_return
+
+Goal nt_complete_run_packet_return is proved.
+Goal nt_complete_run_packet_return used 
+sign_op_ntEncodeRun : fof(sign_op_ntEncodeRun, axiom,
+    ! [VAR_X1]:
+    ((sort_NTProof(VAR_X1)) => sort_NTProof(op_ntEncodeRun(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockTorserRun*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockTorserRun*> set goals nt_run_transport_retains_actual_bit_work
+file://Native_Clock_Torser_NativeClockTorserRun*> set axioms nt_run_codec_retains_complete_proof
+file://Native_Clock_Torser_NativeClockTorserRun*> prove
+Analyzing node NativeClockTorserRun
+selectedGoals:
+nt_run_transport_retains_actual_bit_work
+
+Goal nt_run_transport_retains_actual_bit_work is proved.
+Goal nt_run_transport_retains_actual_bit_work used 
+
+file://Native_Clock_Torser_NativeClockTorserRun*> dg basic NativeClockH24Rules
+file://Native_Clock_Torser_NativeClockH24Rules> set include-theorems true
+file://Native_Clock_Torser_NativeClockH24Rules> set time-limit 4
+file://Native_Clock_Torser_NativeClockH24Rules> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockH24Rules*> set goals nt_upper_reserve_has_exact_native_clock_equation
+file://Native_Clock_Torser_NativeClockH24Rules*> set axioms nt_upper_reserve_rule_definition nt_source_natural_clock_adds_in_native_block
+file://Native_Clock_Torser_NativeClockH24Rules*> prove
+Analyzing node NativeClockH24Rules
+selectedGoals:
+nt_upper_reserve_has_exact_native_clock_equation
+
+Goal nt_upper_reserve_has_exact_native_clock_equation is proved.
+Goal nt_upper_reserve_has_exact_native_clock_equation used 
+sign_op_ntSlack : fof(sign_op_ntSlack, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTReserve(VAR_X1) & sort_NTNativeState(VAR_X2)) =>
+     sort_VNat(op_ntSlack(VAR_X1, VAR_X2)))).
+ sign_op_ntPhi : fof(sign_op_ntPhi, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTReserve(VAR_X1) & sort_NTNativeState(VAR_X2)) =>
+     sort_VNat(op_ntPhi(VAR_X1, VAR_X2)))).
+ sign_op_ntStep : fof(sign_op_ntStep, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTNativeState(op_ntStep(VAR_X1)))).
+ sign_op_vS : fof(sign_op_vS, axiom,
+    ! [VAR_X1]: ((sort_VNat(VAR_X1)) => sort_VNat(op_vS(VAR_X1)))).
+ sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_cdAdd : fof(sign_op_cdAdd, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_VNat(VAR_X1) & sort_VNat(VAR_X2)) =>
+     sort_VNat(op_cdAdd(VAR_X1, VAR_X2)))).
+
+file://Native_Clock_Torser_NativeClockH24Rules*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockH24Rules*> set goals nt_tight_tick_consumes_exactly_one_original_unit
+file://Native_Clock_Torser_NativeClockH24Rules*> set axioms nt_tight_reserve_definition nt_upper_reserve_rule_definition cd_add_z
+file://Native_Clock_Torser_NativeClockH24Rules*> prove
+Analyzing node NativeClockH24Rules
+selectedGoals:
+nt_tight_tick_consumes_exactly_one_original_unit
+
+Goal nt_tight_tick_consumes_exactly_one_original_unit is proved.
+Goal nt_tight_tick_consumes_exactly_one_original_unit used 
+sign_op_ntPhi : fof(sign_op_ntPhi, axiom,
+    ! [VAR_X1, VAR_X2]:
+    ((sort_NTReserve(VAR_X1) & sort_NTNativeState(VAR_X2)) =>
+     sort_VNat(op_ntPhi(VAR_X1, VAR_X2)))).
+ sign_op_ntStep : fof(sign_op_ntStep, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_NTNativeState(op_ntStep(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockH24Rules*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockH24Rules*> set goals nt_terminal_rule_constructs_original_verifier_minimum
+file://Native_Clock_Torser_NativeClockH24Rules*> set axioms nt_terminal_original_receipt_rule rr_root_receipt_gives_minimum
+file://Native_Clock_Torser_NativeClockH24Rules*> prove
+Analyzing node NativeClockH24Rules
+selectedGoals:
+nt_terminal_rule_constructs_original_verifier_minimum
+
+Goal nt_terminal_rule_constructs_original_verifier_minimum is proved.
+Goal nt_terminal_rule_constructs_original_verifier_minimum used 
+sign_op_ntSource : fof(sign_op_ntSource, axiom,
+    ! [VAR_X1]:
+    ((sort_NTNativeState(VAR_X1)) =>
+     sort_VInput(op_ntSource(VAR_X1)))).
+ sign_op_ntEnd : fof(sign_op_ntEnd, axiom,
+    ! [VAR_X1]:
+    ((sort_NTProof(VAR_X1)) => sort_NTNativeState(op_ntEnd(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockH24Rules*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockH24Rules*> set goals nt_native_minimum_returns_all_original_competitors
+file://Native_Clock_Torser_NativeClockH24Rules*> set axioms nt_terminal_native_minimum_definition nt_terminal_rule_constructs_original_verifier_minimum nt_terminal_original_receipt_rule nt_complete_original_clock_invariant nt_complete_run_invariant_definition nt_initial_retains_original_input
+file://Native_Clock_Torser_NativeClockH24Rules*> prove
+Analyzing node NativeClockH24Rules
+selectedGoals:
+nt_native_minimum_returns_all_original_competitors
+
+Goal nt_native_minimum_returns_all_original_competitors is proved.
+Goal nt_native_minimum_returns_all_original_competitors used 
+
+file://Native_Clock_Torser_NativeClockH24Rules*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockH24Rules*> set goals nt_native_terminal_tag_returns_original_sat
+file://Native_Clock_Torser_NativeClockH24Rules*> set axioms nt_native_minimum_returns_all_original_competitors vm_shortest_tag_decides_original
+file://Native_Clock_Torser_NativeClockH24Rules*> prove
+Analyzing node NativeClockH24Rules
+selectedGoals:
+nt_native_terminal_tag_returns_original_sat
+
+Goal nt_native_terminal_tag_returns_original_sat is proved.
+Goal nt_native_terminal_tag_returns_original_sat used 
+
+file://Native_Clock_Torser_NativeClockH24Rules*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockH24Rules*> set goals nt_native_minimum_reference_returns_original_refutation
+file://Native_Clock_Torser_NativeClockH24Rules*> set axioms nt_native_minimum_returns_all_original_competitors vm_shortest_fallback_iff_refutation
+file://Native_Clock_Torser_NativeClockH24Rules*> prove
+Analyzing node NativeClockH24Rules
+selectedGoals:
+nt_native_minimum_reference_returns_original_refutation
+
+Goal nt_native_minimum_reference_returns_original_refutation is proved.
+Goal nt_native_minimum_reference_returns_original_refutation used 
+sign_op_vFallback : fof(sign_op_vFallback, axiom,
+    ! [VAR_X1]:
+    ((sort_VInput(VAR_X1)) => sort_VWord(op_vFallback(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockH24Rules*> dg basic NativeClockUniformTarget
+file://Native_Clock_Torser_NativeClockUniformTarget> set include-theorems true
+file://Native_Clock_Torser_NativeClockUniformTarget> set time-limit 4
+file://Native_Clock_Torser_NativeClockUniformTarget> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockUniformTarget*> set goals nt_native_deadline_is_same_original_deadline
+file://Native_Clock_Torser_NativeClockUniformTarget*> set axioms nt_native_by_frozen_clock_definition nt_monitor_same_original_hit_and_tick cd_affirmative_by_exact_clock
+file://Native_Clock_Torser_NativeClockUniformTarget*> prove
+Analyzing node NativeClockUniformTarget
+selectedGoals:
+nt_native_deadline_is_same_original_deadline
+
+Goal nt_native_deadline_is_same_original_deadline is proved.
+Goal nt_native_deadline_is_same_original_deadline used 
+sign_op_ntMonitor : fof(sign_op_ntMonitor, axiom,
+    ! [VAR_X1]:
+    ((sort_CDMachine(VAR_X1)) =>
+     sort_NTMonitor(op_ntMonitor(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockUniformTarget*> prover SPASS
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockUniformTarget*> set goals nt_full_class_same_machine_same_clock
+file://Native_Clock_Torser_NativeClockUniformTarget*> set axioms nt_uniform_native_target_full_quantifiers nt_monitor_same_original_hit_and_tick nt_native_deadline_is_same_original_deadline cd_pass_def cd_sound_def cd_timely_def
+file://Native_Clock_Torser_NativeClockUniformTarget*> prove
+Analyzing node NativeClockUniformTarget
+selectedGoals:
+nt_full_class_same_machine_same_clock
+
+Goal nt_full_class_same_machine_same_clock is proved.
+Goal nt_full_class_same_machine_same_clock used 
+sign_non_empty_sort_VInput : fof(sign_non_empty_sort_VInput, axiom,
+    ? [VAR_X]: (sort_VInput(VAR_X))).
+ sign_op_vZ : fof(sign_op_vZ, axiom, sort_VNat(op_vZ)).
+ sign_op_ntMonitor : fof(sign_op_ntMonitor, axiom,
+    ! [VAR_X1]:
+    ((sort_CDMachine(VAR_X1)) =>
+     sort_NTMonitor(op_ntMonitor(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockUniformTarget*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockUniformTarget*> set goals nt_uniform_native_clock_decides_original_negative
+file://Native_Clock_Torser_NativeClockUniformTarget*> set axioms nt_full_class_same_machine_same_clock nt_native_deadline_is_same_original_deadline cd_pass_decides_at_one_clock
+file://Native_Clock_Torser_NativeClockUniformTarget*> prove
+Analyzing node NativeClockUniformTarget
+selectedGoals:
+nt_uniform_native_clock_decides_original_negative
+
+Goal nt_uniform_native_clock_decides_original_negative is proved.
+Goal nt_uniform_native_clock_decides_original_negative used 
+
+file://Native_Clock_Torser_NativeClockUniformTarget*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockUniformTarget*> set goals nt_whole_quantified_bridge_returns_to_original_source
+file://Native_Clock_Torser_NativeClockUniformTarget*> set axioms nt_whole_native_clock_definition nt_monitor_constructor_cases nt_full_class_same_machine_same_clock
+file://Native_Clock_Torser_NativeClockUniformTarget*> prove
+Analyzing node NativeClockUniformTarget
+selectedGoals:
+nt_whole_quantified_bridge_returns_to_original_source
+
+Goal nt_whole_quantified_bridge_returns_to_original_source is proved.
+Goal nt_whole_quantified_bridge_returns_to_original_source used 
+sign_op_ntMonitor : fof(sign_op_ntMonitor, axiom,
+    ! [VAR_X1]:
+    ((sort_CDMachine(VAR_X1)) =>
+     sort_NTMonitor(op_ntMonitor(VAR_X1)))).
+
+file://Native_Clock_Torser_NativeClockUniformTarget*> prover EProver
+Hint: Using comorphism `id_CASL.eCFOL=;CASL2TPTP_FOF`
+file://Native_Clock_Torser_NativeClockUniformTarget*> set goals nt_native_whole_clock_iff_original_stopped_decider
+file://Native_Clock_Torser_NativeClockUniformTarget*> set axioms nt_whole_quantified_bridge_returns_to_original_source cd_uniform_exists_equivalence
+file://Native_Clock_Torser_NativeClockUniformTarget*> prove
+Analyzing node NativeClockUniformTarget
+selectedGoals:
+nt_native_whole_clock_iff_original_stopped_decider
+
+Goal nt_native_whole_clock_iff_original_stopped_decider is proved.
+Goal nt_native_whole_clock_iff_original_stopped_decider used 
+
+file://Native_Clock_Torser_NativeClockUniformTarget*> quit
+
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 42: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 47: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 61: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 66: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 42: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 61: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 47: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 61: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 37: > 0 string/t,=<!--,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 56: > 0 string/t,=<!--,""]
+Warning: Duplicate magic entry `CLIF document'
+*unknown*, 151: > 0 search/t/4096,=(cl-module ,"CLIF document"]
+*unknown*, 160: > 0 search/t/4096,=(cl-module ,"CLIF document"]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 42: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 47: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 61: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 66: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 42: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 61: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 47: > 0 string/Wct,=<?xml version,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 61: > 0 string/Wct,=<?xml version,""]
+Warning: Duplicate magic entry `'
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 37: > 0 string/t,=<!--,""]
+/workspace/scratch/1b57605772cd/s4_moonshine/runtime/root/usr/, 56: > 0 string/t,=<!--,""]
+Warning: Duplicate magic entry `CLIF document'
+*unknown*, 151: > 0 search/t/4096,=(cl-module ,"CLIF document"]
+*unknown*, 160: > 0 search/t/4096,=(cl-module ,"CLIF document"]

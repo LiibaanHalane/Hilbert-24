@@ -1,0 +1,603 @@
+{
+  "method": "Exact normal forms in the free associative rational algebra; operator word order retained; rational denominators odd.",
+  "universal_algebra_identities": [
+    {
+      "identity": "native_decoder",
+      "components": 6,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "noncommutative_native_product",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "noncommutative_native_associativity",
+      "components": 6,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "weighted_context_clock_cocycle",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "clock_shear_addition",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "upper_reserve_matrix",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "clock_inverse_is_negative_shear",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "gram_inverse_left",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "gram_inverse_right",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "gram_dagger_reverses_ordered_product",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "gram_dagger_involutive",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "full_native_dagger_same_six_coordinates",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "exact_clock_gram_adjoint",
+      "components": 4,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_gram_unitary_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_e_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_e_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_e_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_e_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_e_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_e_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_e_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_e_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_e_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_e_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_e_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_e_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_gram_unitary_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_r_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_r_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_r_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_r_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_r_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_r_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_r_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_r_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_r_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_r_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_r_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_r_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_gram_unitary_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_rr_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_rr_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_rr_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_rr_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_rr_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_rr_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_rr_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_rr_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_rr_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_rr_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_rr_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_rr_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_gram_unitary_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_s_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_s_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_s_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_s_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_s_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_s_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_s_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_s_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_s_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_s_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_s_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_s_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_gram_unitary_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_sr_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_sr_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_sr_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_sr_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_sr_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_sr_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_sr_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_sr_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_sr_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_sr_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_sr_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_sr_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_gram_unitary_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_srr_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_srr_e",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_srr_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_srr_r",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_srr_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_srr_rr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_srr_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_srr_s",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_srr_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_srr_sr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "frame_product_srr_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    },
+    {
+      "identity": "framed_clock_fusion_srr_srr",
+      "components": 16,
+      "method": "Exact normalization in the free ASSOCIATIVE algebra; word order retained"
+    }
+  ],
+  "identity_count": 91,
+  "actual_fixed_frame_pair_count": 36,
+  "literal_three_bit_gate_table": [
+    {
+      "input": [
+        0,
+        0,
+        0
+      ],
+      "fredkin": [
+        0,
+        0,
+        0
+      ],
+      "toffoli": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        0,
+        0,
+        1
+      ],
+      "fredkin": [
+        0,
+        0,
+        1
+      ],
+      "toffoli": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "input": [
+        0,
+        1,
+        0
+      ],
+      "fredkin": [
+        0,
+        1,
+        0
+      ],
+      "toffoli": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        0,
+        1,
+        1
+      ],
+      "fredkin": [
+        0,
+        1,
+        1
+      ],
+      "toffoli": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        1,
+        0,
+        0
+      ],
+      "fredkin": [
+        1,
+        0,
+        0
+      ],
+      "toffoli": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        1,
+        0,
+        1
+      ],
+      "fredkin": [
+        1,
+        1,
+        0
+      ],
+      "toffoli": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "input": [
+        1,
+        1,
+        0
+      ],
+      "fredkin": [
+        1,
+        0,
+        1
+      ],
+      "toffoli": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        1,
+        1,
+        1
+      ],
+      "fredkin": [
+        1,
+        1,
+        1
+      ],
+      "toffoli": [
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "clock_adjoint_distinct_from_time_inverse_at_one": true,
+  "scope": "Closed native algebra, cost cocycle, frames and dagger; no arbitrary-CNF runtime or polynomial-envelope claim.",
+  "formal_sha256": "2770edc4898b567aa6aac9b8c32078769dca1c16f353397fbee8c655c5275c35"
+}

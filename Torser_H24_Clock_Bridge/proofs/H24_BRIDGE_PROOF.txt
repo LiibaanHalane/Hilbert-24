@@ -1,0 +1,111 @@
+THE GENERATOR CLOCK, CONSTRUCTED IN H24 AND RETURNED THROUGH THE TORSER
+
+Fix the actual implementation A of the original H24/CNF generator, its original
+input encoding, and its initialized state i(C). A transition s -> t is ONE
+actual bit step of A. It includes whatever A executes for rule selection,
+cofactor acquisition, checking, native representation, output and readback.
+This is distinct from the grade or execution of the proof A emits. A stop is
+an already checked negative event; source interpretation of any reached stop
+returns an original refutation of C. Positive inputs need not reach that event.
+
+The complete source clock target is
+
+  there are fixed c>0,d such that for every original C,
+    UNSAT(C) implies that A reaches its checked negative event by
+    c*(|enc(C)|+1)^d actual bit steps.
+
+The program and both constants precede the universal input quantifier.
+
+1. Put the local resource constructor into the existing H24 system.
+
+On the states reachable from i(C), supply a natural reserve R with R(t)<R(s)
+for every actual live transition s -> t. Require this only when C is negative.
+The judgement is the original current state. Its rules are the actual stop
+rule, with no premises and charge zero, and the actual tick rule s -> t,
+with its one premise t and charge one.
+
+Construct T by well-founded recursion on R:
+
+  T(s)=0 at a checked stop;
+  T(s)=1+T(t) on the actual tick s -> t.
+
+These defining equations give a calibration with potential T and zero slack
+at every source rule. Choose the rule by the actual next transition; use R
+as the decreasing policy rank. The existing H24 constructMinimum therefore
+constructs a derivation p_s. Interpret its rules by the original stop and tick
+constructors. The result is a complete execution e_s of A, with every actual
+intermediate state retained, and
+
+  ticks(e_s)=work(p_s)=T(s).
+
+This proves the generator by structure. It does not take a complete run,
+minimum proof or terminal answer as an input. For any other derivation q of
+this same operational judgement, H24 calibration gives work(q)>=T(s), so p_s
+is minimum in the declared source execution grammar. No competing proof is
+enumerated. This minimum does not compare different programs.
+
+Strong induction on R proves T(s)<=R(s): the stop case is zero; in the live
+case, 1+T(t)<=1+R(t)<=R(s). Thus a single fixed initial envelope
+
+  R_C(i(C))<=c*(|enc(C)|+1)^d
+
+gives the required actual negative clock. H24's decoded run and the original
+bounded execution reach the same terminal state: after its exact T(s) ticks
+the source is stopped, and extra budget leaves that state unchanged. Reading
+that reached terminal returns the original refutation. The executable timeout
+wrapper takes only C, A and c,d. It does not receive an UNSAT proof.
+
+2. The local reserve target is exactly the original clock target.
+
+For the converse, suppose the displayed clock for the same A,c,d is supplied.
+Let b(C)=c*(|enc(C)|+1)^d. Define k(n,s) by finite recursion: k(0,s)=0; at a stop
+k(n+1,s)=0; on s -> t set k(n+1,s)=1+k(n,t). This counts the original ticks up
+to n, and elementary induction gives k(n,s)<=n.
+
+If s has stopped by n, one more unit of budget does not change k. If s -> t
+and s has stopped by n, then t has also stopped by n. Induction on an actual
+reachability proof therefore shows that every state reached from i(C) has
+stopped by the same b(C), whenever C is negative. No trace is chosen from an
+existential proposition.
+
+Set R_C(s)=k(b(C),s). For a live state, the successor has stopped within the
+one-tick-smaller residual budget. Stability of k after a stop gives
+
+  R_C(s)=1+R_C(t).
+
+Hence this is the required local natural ranking, and its initial reserve is
+at most b(C). The original A,c,d are unchanged. Consequently the named source
+judgements UniformReserveTarget and UniformDeadlineTarget are equivalent,
+constructively. The local resource formulation has not strengthened the
+original all-input negative deadline. It exposes that same remaining field
+as the input from which the H24 proof constructor operates.
+
+3. Represent the complete costed run and the whole source field on the torser.
+
+For an exact retained chart E with decoder D, D E=id and E D=id on its declared
+native image, transport each original tick to its represented tick. Induction
+on the actual source execution proves
+
+  nativeTicks(E_run(e))=ticks(e),
+  D(nativeEndpoint(E_run(e)))=sourceEndpoint(e).
+
+Thus putNativeBridgeInH24 returns the represented H24-constructed execution
+with the same original bit-work grade and deadline. It represents that SAME
+execution. It does not declare the computation of arbitrary independent
+encoders, decoders or native engines free; any such executed operations must
+be included in the implementation whose actual ticks were priced.
+
+The whole uniform reserve witness also has a native image: retain A,c,d,
+the local resource family, every original input index and its bound. The exact
+chart returns that complete witness, not one projected coefficient or one
+input. NativeReserveTarget is therefore equivalent to UniformReserveTarget.
+constructFromNativeReserve reads the actual witness back and calls the proved
+H24 deadline constructor. Together with the converse, this places the original
+whole clock target itself in H24 with exact native representation and return.
+
+Implementation: H24_Operational_Bridge.lean and H24_Operational_Converse.lean.
+All 37 new theorems and 32 new definitions were checked with Lean 4.19.0;
+each has an empty axiom-dependency list. The generic H24 dependency is unchanged.
+The remaining quantitative source field is explicitly named; it has not been
+silently filled by a proof-code grade, a small representation, or a per-input
+bound.

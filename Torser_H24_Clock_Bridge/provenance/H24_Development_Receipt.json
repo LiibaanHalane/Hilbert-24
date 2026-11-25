@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-11-25T17:12:16.239481+00:00",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "fresh_checks": [
+    {
+      "name": "Hilbert24_Calibrated_Policy",
+      "argv": [
+        "/workspace/scratch/d6e2506bb136/constructor_fix/formal/tool_runtime/lean-4.19.0-linux/bin/lean",
+        "-o",
+        "Hilbert24_Calibrated_Policy.olean",
+        "Hilbert24_Calibrated_Policy.lean"
+      ],
+      "cwd": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24",
+      "environment": {
+        "LEAN_PATH": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24"
+      },
+      "exit_code": 0,
+      "log": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24/Hilbert24_Calibrated_Policy.build.log",
+      "log_sha256": "47b9a70bc4f9ef31136767feb9c273907e8f68d2684a45a3185fbb5bf17abcaf",
+      "source_sha256": "3bc30739f80e0d67542774a7f7fa434c64e674ce1c97a27233bf3b87fbda6761",
+      "olean_sha256": "ff5f46eb37d99057bf312423539c254081ceafad5ba3429116c59ea47d6c8d1e"
+    },
+    {
+      "name": "H24_Operational_Bridge",
+      "argv": [
+        "/workspace/scratch/d6e2506bb136/constructor_fix/formal/tool_runtime/lean-4.19.0-linux/bin/lean",
+        "-o",
+        "H24_Operational_Bridge.olean",
+        "H24_Operational_Bridge.lean"
+      ],
+      "cwd": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24",
+      "environment": {
+        "LEAN_PATH": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24"
+      },
+      "exit_code": 0,
+      "log": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24/H24_Operational_Bridge.build.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "747a538b0604420108eb00f9d9e496ad57859a0ac4cd96061fb7d878cc91ef83",
+      "olean_sha256": "d6553e2da19e459b6df417ff4ab157bd4443fb71269a1cb7b665920df472a6ac"
+    },
+    {
+      "name": "H24_Operational_Converse",
+      "argv": [
+        "/workspace/scratch/d6e2506bb136/constructor_fix/formal/tool_runtime/lean-4.19.0-linux/bin/lean",
+        "-o",
+        "H24_Operational_Converse.olean",
+        "H24_Operational_Converse.lean"
+      ],
+      "cwd": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24",
+      "environment": {
+        "LEAN_PATH": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24"
+      },
+      "exit_code": 0,
+      "log": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24/H24_Operational_Converse.build.log",
+      "log_sha256": "63be1df80813af6edeb285fd94987347453a9c57fbad19e5f618c9ea1f2d4fd0",
+      "source_sha256": "aeaf213cd981f6dd0d4e4936e6d07583f7b1bef9c84bf99b0c91cc7f2a59fb4a",
+      "olean_sha256": "753e3c5d99f521b3feefba8bfbcd90097b3d81cfa4a8fcff213d83e7c22bf7d7"
+    },
+    {
+      "name": "H24_Operational_Dependencies",
+      "argv": [
+        "/workspace/scratch/d6e2506bb136/constructor_fix/formal/tool_runtime/lean-4.19.0-linux/bin/lean",
+        "-o",
+        "H24_Operational_Dependencies.olean",
+        "H24_Operational_Dependencies.lean"
+      ],
+      "cwd": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24",
+      "environment": {
+        "LEAN_PATH": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24"
+      },
+      "exit_code": 0,
+      "log": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_h24/H24_Operational_Dependencies.build.log",
+      "log_sha256": "3142ffca9a772e3ba2e23b0fd1225184c5efa65a2e6182ba95c9630b51b42fd6",
+      "source_sha256": "ff0bc8b5e4262adc8116f5bd21d6ed77623b634f8dfc6855856fb261998417ec",
+      "olean_sha256": "ef7c6cb8bfc3bd7aeb3e419b46c90324cf01a3481e89443c42bd4960cb73f7d6"
+    }
+  ],
+  "new_theorems": 37,
+  "new_definitions": 32,
+  "inspected_new_declarations": 69,
+  "all_inspected_new_declarations_have_empty_axiom_dependencies": true,
+  "dependency_source_unchanged": true,
+  "actual_source_scope": "Fixed actual checked-negative H24/CNF generator bit implementation supplied through GeneratorImplementation; full phase costs belong to its actual next transition. Uniform reserve is the explicit whole-source target, constructively equivalent to the same fixed-machine deadline."
+}

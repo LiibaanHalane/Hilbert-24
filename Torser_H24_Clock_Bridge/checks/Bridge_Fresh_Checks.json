@@ -1,0 +1,73 @@
+{
+  "time_utc": "2026-11-25T17:29:48.797282+00:00",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "fresh_packaged_builds": [
+    {
+      "module": "Hilbert24_Calibrated_Policy",
+      "exit_code": 0,
+      "source_sha256": "3bc30739f80e0d67542774a7f7fa434c64e674ce1c97a27233bf3b87fbda6761",
+      "log": "checks/Hilbert24_Calibrated_Policy.log",
+      "log_sha256": "47b9a70bc4f9ef31136767feb9c273907e8f68d2684a45a3185fbb5bf17abcaf"
+    },
+    {
+      "module": "H24_Operational_Bridge",
+      "exit_code": 0,
+      "source_sha256": "747a538b0604420108eb00f9d9e496ad57859a0ac4cd96061fb7d878cc91ef83",
+      "log": "checks/H24_Operational_Bridge.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "H24_Operational_Converse",
+      "exit_code": 0,
+      "source_sha256": "aeaf213cd981f6dd0d4e4936e6d07583f7b1bef9c84bf99b0c91cc7f2a59fb4a",
+      "log": "checks/H24_Operational_Converse.log",
+      "log_sha256": "63be1df80813af6edeb285fd94987347453a9c57fbad19e5f618c9ea1f2d4fd0"
+    },
+    {
+      "module": "H24_Clock_Credit",
+      "exit_code": 0,
+      "source_sha256": "b7032efc8730130148be86eb398dd1f0a336338068e403a888fbc5eb62251f74",
+      "log": "checks/H24_Clock_Credit.log",
+      "log_sha256": "d2c50b64fcf1be4e51aa54e07b5038ded50da62096d4406bc1c37483f06605f8"
+    },
+    {
+      "module": "H24_Operational_Dependencies",
+      "exit_code": 0,
+      "source_sha256": "ff0bc8b5e4262adc8116f5bd21d6ed77623b634f8dfc6855856fb261998417ec",
+      "log": "checks/H24_Operational_Dependencies.log",
+      "log_sha256": "3142ffca9a772e3ba2e23b0fd1225184c5efa65a2e6182ba95c9630b51b42fd6"
+    }
+  ],
+  "core_and_converse_empty_axiom_declarations": 69,
+  "additional_inspected_empty_axiom_frontier_results": 7,
+  "optional_signed_and_product_arithmetic_dependencies": [
+    "propext",
+    "Quot.sound"
+  ],
+  "new_classical_choice_or_problem_axioms": false,
+  "hets_version": "0.108.0",
+  "hets_static_analysis": "succeeded",
+  "hets_selected_goal_count": 39,
+  "hets_proved_count": 33,
+  "native_receipt": "formal/hets/checks/casl-replay.json",
+  "native_proof_method_map": "formal/hets/VERIFICATION.json",
+  "remaining_automated_native_goals": [
+    "nt_operator_rho_preserves_ordered_product",
+    "nt_context_work_cocycle_is_native_product",
+    "nt_source_natural_clock_adds_in_native_block",
+    "nt_native_dagger_reverses_composition",
+    "nt_framed_clock_composition_cancels_middle_chart",
+    "nt_framed_native_operator_returns_exactly"
+  ],
+  "exact_native_algebra_identity_count": 91,
+  "all_five_whole_clock_goals_proved": [
+    "nt_native_deadline_is_same_original_deadline",
+    "nt_full_class_same_machine_same_clock",
+    "nt_uniform_native_clock_decides_original_negative",
+    "nt_whole_quantified_bridge_returns_to_original_source",
+    "nt_native_whole_clock_iff_original_stopped_decider"
+  ],
+  "algebra_receipt": "formal/hets/checks/native-algebra-certificate.json",
+  "ledger_receipt": "checks/Bridge_Clock_Ledger_Receipt.json",
+  "scope": "Constructed native clock bridge and H24 instance, exact converse and source return. The full uniform frontier account for the chosen all-CNF implementation is a named target, not an asserted inhabitant."
+}

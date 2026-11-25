@@ -1,0 +1,263 @@
+THE ACTUAL GENERATOR CLOCK AS AN H24 SOURCE JUDGEMENT
+
+Implementation
+==============
+
+H24_Operational_Bridge.lean instantiates the EXISTING unchanged
+Hilbert24_Calibrated_Policy.lean. H24_Operational_Converse.lean proves that the
+named local-reserve target is exactly equivalent to the original fixed-machine
+deadline target. The implementation introduces 37 theorems and 32 definitions.
+All 69 new definitions/theorems were individually queried with #print axioms;
+every dependency list is empty. No new axioms, sorry terms, choice, proposition
+extensionality or quotient-soundness dependencies occur in these declarations.
+
+FINAL_FRESH_LEAN_RECEIPT.json records the fresh Lean 4.19.0 commands, source and
+binary hashes, logs and exit codes. All four final checks returned exit code 0.
+The *.build.log files contain the FINAL successful runs; earlier diagnostic
+output has been replaced. Dependency_Provenance.json identifies the unchanged
+original generic H24 source copied for this development. The source original
+and existing saved collection were not modified.
+
+What the machine is
+===================
+
+G : GeneratorImplementation is one fixed operational realization of the actual
+H24/CNF proof/certificate GENERATOR. Its `machine.next` is one actual primitive
+bit transition of that implementation. Its costed execution must include rule
+selection, cofactor acquisition and observation, recursive production, checking,
+writing and readback, and any executed native representation work. It is not
+the execution of the proof the generator emits. Neither the emitted proof's
+n+1/n+2 code grade nor the n outer cofactor cuts is identified with these ticks.
+
+The transition has type State -> Option State. A `some t` is the actual next
+bit state. In the GeneratorImplementation interface, `none` is a recognized,
+already checked negative event. A monitored positive computation may continue
+without such an event. The original program and operational interpretation are
+supplied by this explicit interface; this development does not silently supply
+a costed machine implementation for a higher-level function.
+
+The interface also retains the original source receipt family. `readReceipt`
+interprets a state only after it has ACTUALLY been reached and its checked
+negative event has occurred. `receipt_sound` returns the original negative
+predicate. A receipt is not an input to the runtime. If readback performs actual
+computation in the chosen implementation, those primitive operations belong
+before the recognized event in machine.next. The logical readReceipt field
+cannot justify omitting such work from the source transition system.
+
+The runtime wrapper `runFor` takes only this fixed machine, a natural budget,
+and the original initialized state. `decideNegative` takes the original input
+and the fixed deadline certificate. The original negative proof is used only
+to establish coverage and termination; it is never an executed input to the
+bounded wrapper.
+
+The concrete H24 instance
+========================
+
+The judgement is an actual generator state s. There are exactly two kinds of
+source rule:
+
+  halt(s,h): h proves next(s)=none; no premises; charge 0;
+  tick(s,t,h): h proves next(s)=some(t); premise t; charge 1.
+
+These are the original operational rules, not replacement source formulae and
+not an enumeration of possible proofs. The selected rule is obtained by
+observing this same next transition. The typed semantic interpretation is
+`Execution M s`, which retains every actual intermediate state and transition.
+`decode` calls the existing H24 `interpret` with those actual source-rule
+constructors, rather than merely returning a number.
+
+`Ranking` supplies a natural local reserve R with
+
+  next(s)=some(t) ==> R(t)<R(s).
+
+It does not supply a complete execution, an optimum, a terminal answer or a
+global polynomial clock. The actual remaining tick count T is constructed by
+well-founded recursion along the same bit transition:
+
+  T(s)=0                       if next(s)=none;
+  T(s)=1+T(t)                  if next(s)=some(t).
+
+This constructed T is the H24 calibration potential. Every operational rule
+has zero slack, and its local calibration equation is the defining equation
+above. The supplied local R is the TightPolicy rank, so the existing total
+H24 policy constructor applies. The fact that T is defined recursively is not
+a request to compute a terminal answer before choosing the next rule: the
+rule selector reads only the actual current next transition.
+
+The entry point `putRunInH24 R s` is literally the existing
+Hilbert24Policy.constructMinimum applied to this concrete policy. It returns
+the source derivation and its exact/minimum certificates. Its semantic return
+is `sourceRun R s`.
+
+Structural proofs establish:
+
+  ticks(sourceRun R s) = T(s);
+  T(s) <= R(s);
+  ticks(sourceRun R s) <= work(q) for every operational derivation q at s.
+
+The comparison is a corollary of the calibration, not a comparison pass. Its
+scope is this declared actual operational grammar for the SAME fixed machine
+and source state. It is not a minimum across different SAT algorithms. Since
+all rules are tight and the original transition is deterministic, every valid
+complete derivation at that state has the same tick work.
+
+The proof of T<=R is strong induction on R(s). In the live case,
+1+T(t)<=1+R(t)<=R(s). The halt case is zero. All H24 construction, interpretation
+and these inequalities have empty axiom-dependency lists.
+
+The named whole source judgement
+================================
+
+ReachMachine G C restricts the original machine to states reachable from the
+original initialization of C. Its source-state projection commutes with each
+actual transition. `UniformReserve G` has the following exact field order:
+
+  coefficient c : Nat;
+  degree d : Nat;
+  0<c;
+  for every original C and proof h:Negative(C),
+    Ranking(ReachMachine G C);
+  for every such C,h,
+    initialReserve(C,h) <= c*(inputBits(C)+1)^d.
+
+The implementation G is already fixed before this record; c,d are chosen once
+before the original input quantifier. Ranking is required only on reached
+states on the promised negative side. No total all-input ranking or all-input
+negative termination condition has been inserted.
+
+The explicit named source proposition is
+
+  UniformReserveTarget G := Nonempty (UniformReserve G).
+
+This is where the complete quantitative source field belongs. It is not
+assumed globally by the module. It can be produced from a local frontier or
+signed-amortization account, as in the parent's H24_Clock_Credit development.
+
+`putBridgeInH24 B C h` is the concrete entry point. It constructs the H24
+derivation for the reached original generator run using B's local reserve.
+`generatedRun` reads that derivation back to the original machine. The proved
+grade equality is
+
+  ticks(generatedRun B C h)
+    = work((putBridgeInH24 B C h).derivation),
+
+and its complete bound is
+
+  ticks(generatedRun B C h) <= c*(inputBits(C)+1)^d.
+
+`generatedRun_is_actual_wrapper` proves that running the original machine to
+that fixed budget reaches the same terminal state as the constructed source
+execution. It does not replace that runtime with a proof interpreter.
+`returnedReceipt` reads the original source receipt from that actual terminal.
+
+`bridgeDeadline` constructs `UniformDeadline G` with the same c,d, machine,
+initialization and original input. Its quantified hit field is
+
+  forall C, Negative(C) ->
+    next(runFor(machine, c*(inputBits(C)+1)^d, initial(C)))=none.
+
+`decideNegative` performs the bounded original execution. A reached stop is
+sound by readReceipt and receipt_sound. If there is no stop, the uniform hit
+field refutes Negative(C). This is the whole negative clock-to-decision
+construction; no separately obtained negative proof is passed to the program.
+
+Exact converse: the reserve has not strengthened the target
+=========================================================
+
+H24_Operational_Converse defines boundedTicks(M,n,s) by finite primitive
+recursion. It counts actual ticks taken before either a halt or the supplied
+bound n. It proves boundedTicks(M,n,s)<=n.
+
+If a state has halted by n, one extra budget step leaves this count unchanged.
+If s advances to t and has halted by n, t also halts by n. Induction on the
+REACHABILITY PROOF, entirely in Prop, therefore establishes that the SAME fixed
+deadline suffices from every reached state on that negative input. No witness
+trace is extracted from an existential proposition.
+
+On those reached states set
+
+  R_C(s) = boundedTicks(M, c*(inputBits(C)+1)^d, s).
+
+If s is live, its actual next tick contributes one and the remaining bounded
+count at t is stable after its earlier halt. Consequently R_C(t)<R_C(s).
+The initial bound is the elementary boundedTicks<=budget theorem. This yields
+`rankingFromDeadline` and `reserveFromDeadline` without choice or search for
+a new program, coefficient or degree.
+
+The completed exact equivalence is:
+
+  reserve_target_iff_deadline_target:
+    UniformReserveTarget G <-> UniformDeadlineTarget G.
+
+`converse_keeps_clock` proves that both numerical parameters are literally
+unchanged. Thus putting the remaining bridge into the H24 reserve judgement
+has not added a stronger source-uniform hypothesis. It represents the same
+fixed-program negative deadline in local resource form. The converse does
+not construct that deadline out of nothing: it transforms a supplied deadline
+proof into its exact H24 local ranking, just as the forward construction
+transforms the local ranking into a deadline.
+
+Torser representation and exact original readback
+================================================
+
+`ExactChart Source Native` keeps the actual write/read maps and both inverse
+equations. `nativeMachine` is the represented original transition; its commuting
+square is proved. `nativeRun` transports the COMPLETE source execution,
+retaining one native representation for every actual counted source bit tick.
+Structural induction proves:
+
+  ticks(nativeRun E e) = ticks(e);
+  E.read(finish(nativeRun E e)) = finish(e).
+
+`putNativeBridgeInH24` applies this representation to the actual run constructed
+by putBridgeInH24. Its native run keeps the exact complete polynomial budget.
+This is a representation of the same costed source run, not a claim that an
+arbitrary independent native program performs write/read for no work. For an
+independently executed native implementation, its actual primitive transition
+and executed encoding/decoding costs must be the source machine being priced.
+
+The WHOLE uniform resource witness may itself be given a torser presentation:
+E : ExactChart (UniformReserve G) Native. `NativeReserveTarget E` is Nonempty
+Native; `native_reserve_target_exact` proves it equivalent to the named original
+UniformReserveTarget G. `native_reserve_readback` returns the same entire
+witness, including its original fixed c,d and every original input instance.
+`constructFromNativeReserve` reads that native witness and applies the proved
+H24 deadline constructor directly. It does not replace the universal family
+by one numerical coefficient, one instance, or a projected truth bit.
+
+The parent's concrete operator-valued torser chart can instantiate these
+interfaces using the retained original state/run/clock packet. Its independent
+six-frame conjugation and dagger statements remain separate from this exact
+operational grade proof.
+
+What is closed and what remains a named input
+============================================
+
+Closed here: the actual operational RuleSystem and TightPolicy, generated run,
+structural exact cost and minimum, source interpretation, one-sided reachable
+reserve interface, fixed deadline and executable timeout decision, exact
+reserve/deadline equivalence, and native run/whole-judgement readback.
+
+The original all-CNF quantitative question is now the explicit source
+judgement UniformReserveTarget for its actual fixed bit implementation,
+equivalently UniformDeadlineTarget for that SAME implementation. Neither a
+proof-code grade nor a small representation is used to inhabit it. The parent
+frontier/signed-account constructors provide local ways to inhabit this field
+when their complete all-input source resource account is supplied. Its exact
+placement and the transformations above are implemented, not deferred prose.
+
+Reproduction
+============
+
+Lean executable used:
+/workspace/scratch/d6e2506bb136/constructor_fix/formal/tool_runtime/lean-4.19.0-linux/bin/lean
+
+Set LEAN_PATH to the directory containing the four .lean files, then compile
+in this order:
+  Hilbert24_Calibrated_Policy.lean
+  H24_Operational_Bridge.lean
+  H24_Operational_Converse.lean
+  H24_Operational_Dependencies.lean
+
+The final dependency inspection prints all 69 new definition/theorem axiom dependencies. The
+unchanged generic H24 module has its own original axiom-print declarations.

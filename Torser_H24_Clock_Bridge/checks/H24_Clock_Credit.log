@@ -1,0 +1,14 @@
+'H24ClockCredit.FrontierAccount.reserve_step' does not depend on any axioms
+'H24ClockCredit.frontier_constructs_actual_clock' does not depend on any axioms
+'H24ClockCredit.SignedAccount.reserve_cast' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.SignedAccount.reserve_step' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.SignedAccount.initial_reserve' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.credit_constructs_actual_run' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.credit_constructs_initial_clock' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.Budget.add_bound' does not depend on any axioms
+'H24ClockCredit.Budget.mul_exact' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.uniform_frontier_clock' does not depend on any axioms
+'H24ClockCredit.uniform_credit_clock' depends on axioms: [propext, Quot.sound]
+'H24ClockCredit.frontierUniformReserve' does not depend on any axioms
+'H24ClockCredit.putFrontierBridgeInH24' does not depend on any axioms
+'H24ClockCredit.decideFromFrontier' does not depend on any axioms

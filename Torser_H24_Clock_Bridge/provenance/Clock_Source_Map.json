@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/bridge_h24/originals/Reversible_H24_Clock_Adjoints.pdf",
+    "bytes": 372385,
+    "sha256": "3f51cd41255469969d558af019b6e74ce81f6c4782612257e8c4d95f761e7726"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/h24_work/originals/Final_Proofs_Seven_Twenty_GRH_YM_Hilbert24_PNP.het",
+    "bytes": 2185791,
+    "sha256": "87c71ce4551ec69eb7071e81cabe935ab272c2b07a332b26a75df19a98d178f2"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/h24_work/originals/Hilbert24_Portable.het",
+    "bytes": 12013,
+    "sha256": "1b20ad508474691eb87aa48e45ba53a9b7970b03029b11e905c488b8fea7fea1"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/README.md",
+    "bytes": 16324,
+    "sha256": "82c4cc048ea7ac369a793177006a650d05aa2c0a93b46ae45979fdba22fa3fb6"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/TORSOR_MODEL.md",
+    "bytes": 14191,
+    "sha256": "66b727469c51a7b114a3405422ba77b58f188d1390a87294ac3072b96b48eb70"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/agda/RouteBounds.agda",
+    "bytes": 3478,
+    "sha256": "2514abf66be3a2d7ded9a994e51b826c5480e4526f85a4ea8e989f160430fa60"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/prior/FullReturn.agda",
+    "bytes": 4742,
+    "sha256": "f99a122c9aa746d36797ecc0d4c826eeee5db1fac52a14f6b4251efc1d6fa072"
+  },
+  {
+    "path": "/workspace/scratch/e609d6fab5c5/h24_work/extracted/Hilbert24_ConstructMinimum_Fixed/Hilbert24_ConstructMinimum/Reversibility_Time_Adjoints.txt",
+    "bytes": 8409,
+    "sha256": "816e85e475f78128c49c4f40a1f05236c42b41c7516fb4967ef34acf90cc7953"
+  }
+]

@@ -1,0 +1,21 @@
+25
+'Hilbert24Policy.sumFin_congr' does not depend on any axioms
+'Hilbert24Policy.sumFin_add' does not depend on any axioms
+'Hilbert24Policy.stokes' does not depend on any axioms
+'Hilbert24Policy.global_lower_bound' does not depend on any axioms
+'Hilbert24Policy.calibrationFromFeasible' does not depend on any axioms
+'Hilbert24Policy.build' does not depend on any axioms
+'Hilbert24Policy.build_has_zero_slack' does not depend on any axioms
+'Hilbert24Policy.build_attains' does not depend on any axioms
+'Hilbert24Policy.build_is_global_minimum' does not depend on any axioms
+'Hilbert24Policy.minimum_iff_zero_slack' does not depend on any axioms
+'Hilbert24Policy.zero_slack_iff_allTight' does not depend on any axioms
+'Hilbert24Policy.add_eq_zero_parts' does not depend on any axioms
+'Hilbert24Policy.sumFin_zero_imp' does not depend on any axioms
+'Hilbert24Policy.complete_minimum_fibre' does not depend on any axioms
+'Hilbert24Policy.constructMinimum' does not depend on any axioms
+'Hilbert24Policy.interpret' does not depend on any axioms
+'Hilbert24Policy.returnOriginal' does not depend on any axioms
+'Hilbert24Policy.chain_all_inputs' does not depend on any axioms
+'Hilbert24Policy.chain_example_25' does not depend on any axioms
+'Hilbert24Policy.chainLoop_is_also_minimum' does not depend on any axioms

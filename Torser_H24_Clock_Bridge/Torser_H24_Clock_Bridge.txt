@@ -1,0 +1,330 @@
+TORSER → HILBERT 24 → THE ORIGINAL MACHINE CLOCK
+Constructed bridge, 25 November 2026
+
+THE RESULT
+
+The bridge now has a concrete native representation and an instance of the
+existing Hilbert24Policy.RuleSystem. The public constructor entry points are
+
+  H24ClockCredit.putFrontierBridgeInH24
+  H24OperationalBridge.putBridgeInH24
+  H24OperationalBridge.putNativeBridgeInH24
+  H24ClockCredit.decideFromFrontier
+
+The first constructs the local ranking from the original frontier account,
+then calls the existing H24 constructor. The returned derivation decodes to
+the same original execution, with H24 work equal to its actual bit ticks.
+The native matrix stores the original transition and that same work together.
+The converse constructs the local reserve from the original deadline, retaining
+the same program and polynomial constants. The native target is therefore an
+exact formulation of the clock target.
+
+The source judgement for the remaining uniform resource construction is now
+explicit: construct the frontier potential, credit and their local equations
+for the fixed generator, with a polynomial bound at the initial state. The
+bridge below is proved. An all-CNF inhabitant of that resource judgement has
+not been inserted as an axiom or fabricated as an output of the bridge.
+
+1. THE ORIGINAL OBJECT TO REPRESENT
+
+Fix the actual generator implementation A before its input C. A state includes
+its original input, finite control, tapes and heads, coefficient stores, rule
+selection state, and output. Each actual bit tick includes the work performed
+on those structures. Parsing, cofactor acquisition, native arithmetic, lookup,
+proof construction, checking and readback all belong to A's execution.
+
+For the negative-only formulation, stop the observed execution at the first
+checked original refutation event. The underlying reversible system can keep
+running; the proof grammar describes the event-stopped prefix. Soundness of
+such an event holds on all inputs. Termination and resource conditions are
+required only for reached states on the original negative side.
+
+The target is
+
+  exists c>0,d, for every original C,
+    UNSAT(C) implies a checked original negative event of A
+    by c(|enc(C)|+1)^d actual bit ticks.
+
+A, c and d precede C. The executable timeout wrapper receives C, the fixed A,
+and the deadline. It receives no proof that C is UNSAT. On a hit it returns
+the original negative result. On timeout, the proved coverage supplies the
+other answer.
+
+The original shortest-verifier formulation is carried by its separate source
+return. A model code 0a has n+1 bits; the reference code 10^(n+1) has n+2 bits.
+The source theorem proves the emitted code is shortest among every accepted
+code. The original shortest-code certificate is retained through its
+source-receipt interpretation; the new H24 return supplies the actual
+execution-clock proof for that same implementation.
+
+2. BREAK THE CLOCK INTO LOCAL CONSTRUCTORS
+
+The natural frontier account has, at an actual live tick s → t,
+
+  Phi(s), credit(s) : Nat,
+  alpha(s,t) : Nat,
+  1 + Phi(t) = alpha(s,t) + Phi(s),
+  alpha(s,t) + credit(t) <= credit(s).
+
+The first equality is the original local frontier accounting law. The second
+pays that amortized charge from retained credit. Define
+
+  Psi(s) = Phi(s) + credit(s).
+
+Then ordinary addition gives
+
+  1 + Psi(t)
+    = 1 + Phi(t) + credit(t)
+    = Phi(s) + alpha(s,t) + credit(t)
+    <= Phi(s) + credit(s)
+    = Psi(s).
+
+Thus every actual live tick strictly decreases a natural number. This is a
+constructed Ranking field, and its proof uses no choice, excluded middle or
+postulated clock bound. The account's local equations are its explicit inputs.
+
+The source also allows signed amortized charges. Let A_t be their cumulative
+sum, with A_t <= B for every reached prefix and initial A_0=0. Set
+
+  credit_t = B-A_t,
+  Psi_t = Phi_t + B-A_t.
+
+The prefix cap proves this is natural. From
+
+  1+Phi_(t+1) <= (A_(t+1)-A_t)+Phi_t
+
+one obtains 1+Psi_(t+1)<=Psi_t. If the balance is exact, the decrease is exact.
+Credit alone may rise after a negative amortized charge; the total reserve
+still decreases by paid work. H24_Clock_Credit.lean includes both constructions.
+
+All these accounts concern the fixed generator itself. If its code evaluates
+an analysis potential, writes a binary counter, materializes a matrix, or
+executes a frame conversion, those instructions are ticks of the same A.
+A proof-side potential is an invariant of that execution, not a free oracle
+called by the program.
+
+3. REPRESENT BOTH TRANSITION AND WORK ON THE TORSER
+
+Let X contain the original recorded contexts. A primitive event can retain a
+fixed-size history symbol recording overwritten bits and old finite control.
+The recorded transition is injective on its live domain; its inverse is
+defined on its actual image. History length records the number of paid events.
+
+Use the free module on basis e_x and the row-and-column-finite contextual
+operator ring R over Z_2. For a recorded transition f and original natural
+cost c(x), define
+
+  P_f(e_x)     = e_(f(x)),
+  W_(f,c)(e_x) = c(x) e_(f(x)),
+
+with zero outside f's domain. The original six-coefficient chart is
+
+                  [ t-2b   0     0    0 ]
+  rho(t,b,L)  =    [  0    L00   L01   0 ]
+                  [  0    L10   L11   0 ]
+                  [  b     0     0    t ].
+
+The coefficients are contextual operators. Their multiplication order is
+retained. Its decoder reads the (4,4) and (4,1) entries and the middle block,
+so delta(rho(a))=a, and direct multiplication proves rho(ab)=rho(a)rho(b).
+
+The clocked operation is the following explicit sparse matrix:
+
+  C(f,c) = rho(P_f,0, [[P_f,W_(f,c)],[0,P_f]]).
+
+Composition on the original basis proves
+
+  C(g,d) C(f,c) = C(g o f, c + d o f).
+
+Indeed the off-diagonal coefficient is
+
+  P_g W_(f,c) + W_(g,d) P_f,
+
+which sends e_x to (c(x)+d(f(x))) e_(g(f(x))). This proves both source return
+and additive actual work at once. Induction on the operational constructors
+gives the complete run, its original source marks and its full paid clock.
+
+For a fixed natural clock coordinate, use
+
+  U(k) = [[1,k],[0,1]],      K(k)=rho(1,0,U(k)).
+
+Then K(a)K(b)=K(a+b), and K(a)=K(b) reflects a=b on the retained natural
+slice. A local reserve law becomes a literal native equation:
+
+  1 + Psi(t) + eta = Psi(s), eta:Nat
+
+  iff
+
+  K(1) K(Psi(t)) K(eta) = K(Psi(s)).
+
+The cost remains a marked natural number. A finite dyadic residue can wrap;
+the bound uses the original natural field or a sufficient proved precision.
+The construction introduces no order on arbitrary 2-adic elements.
+
+4. SIX FRAMES, DAGGER AND REVERSIBLE EXECUTION
+
+For the original six frames g in GL_2(F_2)=S_3, let Gamma_x be the retained
+frame at source context x. The transported operation is
+
+  C_hat_(y,x) = Gamma_y C(f,c) Gamma_x^(-1).
+
+At composition, the middle frame factors cancel and the same source-and-cost
+fusion law returns. The original frame anchors and contexts are retained.
+
+The full original Gram matrix is
+
+  J = [[1,0,0,1],
+       [0,2,-1,0],
+       [0,-1,2,0],
+       [1,0,0,2]],             det J = 3.
+
+With coefficient transpose *, define M^dagger=J^(-1) M^* J. Direct
+multiplication proves both (MN)^dagger=N^dagger M^dagger and dagger^2=id.
+The six frame matrices are unitary in this Gram form. The original middle
+block uses G=[[2,-1],[-1,2]] and L^dagger=G^(-1)L^*G.
+
+The unweighted recorded data transition has the inverse on its image. The
+clocked operation retains paid work as well. Executing a reversible event and
+then its inverse produces C(id,2) when each costs one; that is a different
+clock record from C(id,0). Pure equality of two presentations keeps the same
+history; an executed conversion contributes its actual events.
+
+Fredkin and Toffoli act on the original local bits. A fixed finite transition
+table compiles to finite reversible local blocks. If a source event e compiles
+to kappa_A(e) actual native ticks, composition gives
+
+  W_native(C) = W_initial(C) + sum_e kappa_A(e) + W_final(C).
+
+The fixed maximum depends on A, chosen before C. Initial, final, checking and
+output costs are included. This explicit simulation equation also allows A
+to be the native implementation from the outset.
+
+5. PUT THE BRIDGE INTO THE EXISTING H24 CONSTRUCTOR
+
+H24_Operational_Bridge.lean imports the unchanged
+Hilbert24_Calibrated_Policy.lean. Its source RuleSystem is concrete:
+
+  HALT:   next(s)=none                  arity 0, charge 0
+  TICK:   next(s)=some(t), proof at t   arity 1, charge 1.
+
+The chosen rule is obtained from the machine's actual next transition. A
+Ranking supplies the strictly decreasing natural Psi. No complete execution,
+minimum or halting answer is supplied to the constructor.
+
+Well-founded recursion constructs the exact remaining count:
+
+  remaining(s) = 0                       if next(s)=none,
+  remaining(s) = 1+remaining(t)           if next(s)=some(t).
+
+Use remaining as the H24 calibration potential and zero local slack. Every
+selected rule is tight. Psi is the structural rank; remaining is constructed
+from that rank. It is not a guessed minimum or a new input.
+
+The original H24 constructor then returns the derivation. Its interpreter
+uses actual halt and tick constructors to decode the original execution.
+Induction proves
+
+  actualTicks(decode(p)) = H24.work(p),
+  actualTicks(sourceRun) = remaining(initial),
+  actualTicks(sourceRun) <= Psi(initial).
+
+For an arbitrary competitor in this same operational rule system, the usual
+calibration theorem gives the minimum comparison. The scope is the declared
+fixed-machine execution judgement. The separate shortest-verifier theorem
+retains its own comparison over every accepted original code.
+
+The entry point putFrontierBridgeInH24 composes these actual definitions:
+
+  frontier account
+    -> Phi+credit
+    -> Ranking
+    -> UniformReserve
+    -> Hilbert24Policy.constructMinimum
+    -> decoded original execution and clock.
+
+It makes no enumeration of competing proofs. Original readback is a field of
+the fixed GeneratorImplementation and is applied to the reached terminal.
+
+6. THE UNIFORM POLYNOMIAL IS CONSTRUCTED WITH ITS PARAMETERS
+
+Let the original initial frontier and credit bounds be
+
+  Phi(initial C)    <= k(N+1)^e,
+  credit(initial C) <= b(N+1)^f,
+  N = |enc(C)|.
+
+The Budget constructor returns
+
+  c = k+b,       d = max(e,f),
+  actualTicks(C) <= c(N+1)^d.
+
+The Lean implementation computes the maximum by primitive recursion and
+proves its required order facts constructively. The positive clock coefficient
+is an explicit natural field of the uniform interface; if necessary it can
+be enlarged to max(1,k+b). The original parameters precede all input cases.
+
+The negative-side variant uses FrontierAccount on ReachMachine G C, under
+the original negative proposition. It produces UniformReserve G and passes
+that object to putBridgeInH24. The executable decideFromFrontier only runs
+the fixed machine to the constructed fixed deadline and reads its checked
+event. It receives the original C, not a proof of its answer.
+
+7. THE CONVERSE PRESERVES EXACTLY THE ORIGINAL CLOCK TARGET
+
+H24_Operational_Converse.lean constructs a reserve from UniformDeadline G.
+It uses finite bounded-step recursion with the already supplied fixed
+deadline. It does not extract a path from a proposition by choice. Every
+reachable negative-side state inherits a sufficient bounded halt, and the
+bounded remaining-step function decreases at every actual live tick.
+
+The result is the checked equivalence
+
+  UniformReserveTarget G <-> UniformDeadlineTarget G.
+
+The same machine, original input map, coefficient c and degree d are retained.
+The native whole-record target has exact encode/readback in both directions.
+Thus the decomposition has not changed the target to a stronger all-input
+ranking or weakened it to a single input or finite aperture.
+
+The native source judgement to construct is now explicit:
+
+  J_beta(A,K,B):
+    original source context |- a uniform original frontier account
+    with local tick balance, retained credit, original terminal return,
+    and initial bound K(N)+B(N).
+
+Equivalently, its native local equations are the K-matrix equations above,
+with the same natural fields and the original uniform quantifiers. Its proof
+can use any already established source operation, adjoint, native calculation
+or source-preserving return. The H24 proof must supply every field at its
+actual scope; the name of the target is not an added zero-cost terminal rule.
+
+8. THE FILES AND THE FRESH CHECKS
+
+The package includes the complete new written clock and native algebra proofs,
+the complete portable Hets/CASL extension and its original source imports,
+the unchanged generic H24 module, the operational H24 instance, its converse,
+the frontier-credit constructor, and the exact check receipts.
+
+Fresh Lean 4.19 checks cover the actual H24 instance and converse. Every one
+of their 69 new definitions/theorems has an empty axiom dependency list.
+The natural frontier reserve, its total clock, Budget.add_bound,
+uniform_frontier_clock, frontierUniformReserve, putFrontierBridgeInH24 and
+decideFromFrontier also have empty axiom dependency lists.
+
+The optional signed-integer account and optional product-budget arithmetic
+use Lean's standard propext and Quot.sound lemmas; their exact dependency
+output is retained separately. No Classical.choice or new problem axiom is
+introduced. The central natural frontier route uses the empty-axiom results.
+
+The Hets parser, local E proofs, exact native algebra checks and finite ledger
+checks have their own receipts. Their scope is stated in those receipts.
+The ledger examples check both actual source returns and rejection of unpaid
+clock substitutions. They illustrate the proved structural laws; they are not
+a finite-sample claim about every CNF.
+
+This addition completes the bridge representation and its H24 constructors.
+The universal frontier account for the chosen all-CNF implementation remains
+the named source/native judgement J_beta. The new files make its exact fields,
+local native equations, original interpretation and constructor application
+available in the same proof system.

@@ -1,0 +1,151 @@
+{
+  "status": "stable-complete",
+  "construction": "Native original-machine clock, six-frame torser and shortest-verifier H24 judgment",
+  "formal_file": "Native_Clock_Torser.het",
+  "formal_sha256": "2770edc4898b567aa6aac9b8c32078769dca1c16f353397fbee8c655c5275c35",
+  "portable_interface": "NativeClockUniformTarget preserves one original machine and the same fixed clock constants before all original inputs, with exact same checked hit and source tick.",
+  "hets": {
+    "version": "0.108.0",
+    "static_analysis": "succeeded for all nine new specs and unchanged imported parent",
+    "process_exit": 0,
+    "selected_goals": 39,
+    "proved_goals": 33,
+    "remaining_open": [
+      "nt_operator_rho_preserves_ordered_product",
+      "nt_context_work_cocycle_is_native_product",
+      "nt_source_natural_clock_adds_in_native_block",
+      "nt_native_dagger_reverses_composition",
+      "nt_framed_clock_composition_cancels_middle_chart",
+      "nt_framed_native_operator_returns_exactly"
+    ],
+    "attempt_seconds_per_goal": 4,
+    "remaining_status": "Reported still open by the recorded Hets run; no counterexample is reported in this final run. These six are not claimed to be Hets-discharged.",
+    "all_five_whole_clock_goals_proved": [
+      "nt_native_deadline_is_same_original_deadline",
+      "nt_full_class_same_machine_same_clock",
+      "nt_uniform_native_clock_decides_original_negative",
+      "nt_whole_quantified_bridge_returns_to_original_source",
+      "nt_native_whole_clock_iff_original_stopped_decider"
+    ],
+    "detailed_receipt": "checks/casl-replay.json",
+    "full_log": "checks/hets-casl-replay.log",
+    "prover_command_file": "checks/replay.commands",
+    "comorphism": "id_CASL.eCFOL=;CASL2TPTP_FOF"
+  },
+  "independent_exact_algebra": {
+    "method": "Exact normal forms in the free associative rational algebra; operator word order retained; rational denominators odd.",
+    "identity_count": 91,
+    "all_identities_passed": true,
+    "actual_frame_products": 36,
+    "actual_three_bit_gate_input_rows": 8,
+    "certificate": "checks/native-algebra-certificate.json",
+    "checker": "verify_native_algebra.py",
+    "limitation": "The certificate is an independent exact Python normal-form check using the unchanged archived kernel, not a proof imported into Hets or a Lean kernel theorem."
+  },
+  "remaining_casl_goal_method_map": {
+    "nt_operator_rho_preserves_ordered_product": {
+      "written": "Native_Clock_Torser_Proof.md section 3: expand all entries of rho(a)rho(b), retaining coefficient order.",
+      "exact_checks": [
+        "noncommutative_native_product"
+      ],
+      "coverage": "Exact universal native six-coordinate product, all 16 matrix entries."
+    },
+    "nt_context_work_cocycle_is_native_product": {
+      "written": "Native_Clock_Torser_Proof.md section 3: multiply weighted context blocks; apply their coefficients to each actual original basis record.",
+      "exact_checks": [
+        "weighted_context_clock_cocycle"
+      ],
+      "coverage": "Exact universal weighted two-by-two native block product, all 16 native matrix entries."
+    },
+    "nt_source_natural_clock_adds_in_native_block": {
+      "written": "Native_Clock_Torser_Proof.md section 3: shear multiplication plus the specified natural-number ring embedding.",
+      "exact_checks": [
+        "clock_shear_addition"
+      ],
+      "coverage": "Universal coefficient identity; the source natural embedding preserves addition by its explicit interpretation law."
+    },
+    "nt_native_dagger_reverses_composition": {
+      "written": "Native_Clock_Torser_Proof.md section 5, and README.md explicit general derivation: (Jinv Bstar J)(Jinv Astar J)=Jinv Bstar Astar J=(AB)dagger.",
+      "exact_checks": [
+        "gram_inverse_left",
+        "gram_inverse_right",
+        "gram_dagger_reverses_ordered_product"
+      ],
+      "coverage": "Written proof covers arbitrary matrices. The exact ordered-polynomial dagger check covers arbitrary native six-coordinate matrices, alongside the full concrete Gram inverse."
+    },
+    "nt_framed_clock_composition_cancels_middle_chart": {
+      "written": "Native_Clock_Torser_Proof.md section 4, and README.md explicit general derivation: Fk B Fh_inv Fh A Fg_inv = Fk (BA) Fg_inv.",
+      "exact_check_families": [
+        "frame_product_* (36 exact cases)",
+        "framed_clock_fusion_* (36 exact cases)"
+      ],
+      "coverage": "Written proof covers arbitrary matrices and independent source, middle and target frames. Exact fusion checks cover arbitrary native matrices in the 36 closed-endpoint frame specializations; all finite frame products are checked."
+    },
+    "nt_framed_native_operator_returns_exactly": {
+      "written": "Native_Clock_Torser_Proof.md section 4, and README.md explicit general derivation: Fh_inv (Fh A Fg_inv) Fg = A, using involutivity of inverse in the literal six-element group.",
+      "exact_check_families": [
+        "frame_product_* (36 exact cases; includes every inverse pair)"
+      ],
+      "coverage": "General written cancellation uses the verified inverse pairs and associative matrix multiplication. There is no separately named exact normal-form test for this full arbitrary-matrix CASL sentence."
+    }
+  },
+  "finite_frame_goals_outside_selected_schedule": {
+    "goals": [
+      "nt_six_frames_exact_inverse",
+      "nt_six_frames_composition"
+    ],
+    "method": "The literal group table is faithfully represented by the checked six concrete matrices and 36 products; matrix associativity and the inverse-pair entries give the two written conclusions."
+  },
+  "source_interpretation_prerequisites": [
+    "Associative coefficient ring with involution and central inverse of 3",
+    "Characteristic-zero natural-number embedding; natural order remains on the original source Nat sort",
+    "Ordinary matrix algebra and the full original Gram inverse",
+    "Fixed-machine local history event really restores the preceding machine state",
+    "Structural induction on the free execution-proof syntax",
+    "Imported original minimum, original tag, refutation and fixed-monitor theorems"
+  ],
+  "source_target_existence_assumptions": [],
+  "all_cnf_uniform_reserve_inhabitant_supplied": false,
+  "execution_scope": "Clock is complete original bit work. Code size, fibre rank, recursion depth and finite clock residues are not substituted for execution work. Identity run codec equations retain already-native proof syntax and do not implement a computational encoder for free.",
+  "imported_parent_scope": "Original named Native_Shortest_Proof conclusions are reused; this run does not reprove the complete historical parent library.",
+  "constructor_coverage_note": "Explicit constructor-surjectivity and finite-case laws state valid free-datatype elimination consequences because the chosen FOF comorphism erases generated-sort coverage. They are not source-target existence assumptions.",
+  "packaging": {
+    "runtime_override": "TORSER_HETS_BIN directory containing hets and prover executables; recorded local runtime fallback, then PATH",
+    "dependencies_included": [
+      "deps/Native_Shortest_Proof.het",
+      "deps/native_algebra/"
+    ],
+    "removed_stale_generated_theory_snapshots": [
+      "Native_Clock_Torser_NativeClockCoefficientData.th",
+      "Native_Clock_Torser_NativeClockH24Rules.th",
+      "Native_Clock_Torser_NativeRootMatrix.th",
+      "Native_Clock_Torser_CechReversibleGates.th",
+      "Native_Clock_Torser_NativeClockFrameInterpretation.th",
+      "Native_Clock_Torser_FixedMonitorClock.th",
+      "Native_Clock_Torser_NativeClockAdjointInterpretation.th",
+      "Native_Clock_Torser_NativeClockConcreteMatrix.th",
+      "Native_Clock_Torser_NativeClockTorserState.th",
+      "Native_Clock_Torser_NativeClockSixFrames.th",
+      "Native_Clock_Torser_NativeClockTorserRun.th"
+    ],
+    "unexpected_ascii_control_scan": "clean; tab and newline allowed, carriage return and other ASCII controls absent in new text artifacts"
+  },
+  "sha256_files": {
+    "Native_Clock_Torser.het": "2770edc4898b567aa6aac9b8c32078769dca1c16f353397fbee8c655c5275c35",
+    "Native_Clock_Torser_Proof.md": "324663b45e4144388dfb0c783328c740076f9fd86b45def88b2c622f7c746d5c",
+    "README.md": "9f19cf7ccbaa962156090bd54d52e549f55927ece8f7cc60a450561e47aabac0",
+    "SOURCE_MAP.json": "aad38953c9a221936d0a55dc61b25d86a3df20880cb244d684dcc1360a87f22d",
+    "build_formal.py": "cbc455df2b0fc3a6c3df4f06ec6d287d84f36627480fa321908d011b5e70b693",
+    "checks/casl-replay.json": "c73e6c42d394a8cda4e876897b8e011cd38cea46240eb17ba567fa4c6f1e3c0f",
+    "checks/hets-casl-replay.log": "e5cab3af88f77f545a9ac0d16755b4a949879dd26da71f928606500ff50868ff",
+    "checks/native-algebra-certificate.json": "99efe61658268d765c754e2364a0c4ac39dfda15279ac4f0520defbfc114ec75",
+    "checks/replay.commands": "ed5701895060adc3b5a1c1024a3e5dde13fac441eff5b84ae37db0ab620a9d63",
+    "deps/Native_Shortest_Proof.het": "dea01f0201709dbe7d16a95fe1c466b22edc8e3b001fb96605881ae21679c63d",
+    "deps/native_algebra/canonical_core.py": "6500dd53f573f35155473b50314afa7f7d11a96ddbd0086529fbf982a9a3dc50",
+    "deps/native_algebra/inverse_limit_microcosm.py": "91451f7878dcb3194b1ed959e61309781d0d503442e57cfc5398f9928938ecd9",
+    "deps/native_algebra/noncommutative_native.py": "e9e5418896286fcb3f4e86964ea1fdffd82a01750ce1e660e7ce1abeb90478ad",
+    "deps/native_algebra/torsor_matrix.py": "829031c718d397621fc478515a7af201bf819905bf17aa32245b20af18b51517",
+    "replay_casl.py": "9aaf8087e5af8e8ffffcf8f53f017dcd48d7b49fc283a1f3e4291856b2a6bbf7",
+    "verify_native_algebra.py": "690523bc608fcdd2ed74460f64879969ca220275b63871e9052bcab4ddbe49fb"
+  }
+}

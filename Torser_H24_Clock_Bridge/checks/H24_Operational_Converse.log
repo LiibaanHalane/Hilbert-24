@@ -1,0 +1,8 @@
+'H24OperationalBridge.boundedTicks_le' does not depend on any axioms
+'H24OperationalBridge.boundedTicks_stable' does not depend on any axioms
+'H24OperationalBridge.reached_halted_by_same_deadline' does not depend on any axioms
+'H24OperationalBridge.boundedTicks_decreases' does not depend on any axioms
+'H24OperationalBridge.rankingFromDeadline' does not depend on any axioms
+'H24OperationalBridge.reserveFromDeadline' does not depend on any axioms
+'H24OperationalBridge.reserve_target_iff_deadline_target' does not depend on any axioms
+'H24OperationalBridge.converse_keeps_clock' does not depend on any axioms

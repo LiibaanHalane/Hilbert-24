@@ -1,0 +1,41 @@
+{
+  "new_construction": "Native clock and shortest-verifier torser judgment",
+  "parent_sources": [
+    {
+      "path": "/workspace/scratch/e609d6fab5c5/pnp_agent_native/originals/Native_Shortest_Proof.het",
+      "sha256": "dea01f0201709dbe7d16a95fe1c466b22edc8e3b001fb96605881ae21679c63d"
+    },
+    {
+      "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/TORSOR_MODEL.md",
+      "sha256": "66b727469c51a7b114a3405422ba77b58f188d1390a87294ac3072b96b48eb70"
+    },
+    {
+      "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/algebra/noncommutative_native.py",
+      "sha256": "e9e5418896286fcb3f4e86964ea1fdffd82a01750ce1e660e7ce1abeb90478ad"
+    },
+    {
+      "path": "/workspace/scratch/e609d6fab5c5/pnp_work/extracted/PNP_Multiple_Constructions/PNP_Multiple_Constructions/algebra/torsor_matrix.py",
+      "sha256": "829031c718d397621fc478515a7af201bf819905bf17aa32245b20af18b51517"
+    },
+    {
+      "path": "/workspace/scratch/e609d6fab5c5/h24_agent_native/originals/Belnap_Cech_Cayley_Original_Return.het",
+      "sha256": "a2c28e9f537d2a949ce3869e2f5217fb0a5936bc42ddd93dc1015772cb4b3e32"
+    }
+  ],
+  "formal_file": "/workspace/scratch/e609d6fab5c5/bridge_h24/agent_native/Native_Clock_Torser.het",
+  "formal_sha256": "2770edc4898b567aa6aac9b8c32078769dca1c16f353397fbee8c655c5275c35",
+  "imports": [
+    "Native_Shortest_Proof.FixedMonitorClock",
+    "Native_Shortest_Proof.NativeRootMatrix",
+    "Native_Shortest_Proof.CechReversibleGates"
+  ],
+  "explicit_interpretation_laws": [
+    "Associative coefficient ring with involution and odd third",
+    "Natural embedding in characteristic zero; order stays on source VNat",
+    "Ordinary finite matrix algebra and concrete Gram inverse",
+    "Actual local finite event restores the previous machine state",
+    "Structural induction on free execution-proof syntax",
+    "Source natural-addition associativity"
+  ],
+  "target_existence_assumptions": []
+}

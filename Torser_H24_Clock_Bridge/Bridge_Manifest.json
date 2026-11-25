@@ -1,0 +1,294 @@
+{
+  "title": "Torser \u2192 H24 \u2192 the original clock",
+  "date": "2026-11-25",
+  "main_entry": "H24ClockCredit.putFrontierBridgeInH24",
+  "proofs": [
+    [
+      "Constructed bridge and exact target",
+      "Torser_H24_Clock_Bridge.txt"
+    ],
+    [
+      "Complete operational H24 proof",
+      "proofs/H24_BRIDGE_PROOF.txt"
+    ],
+    [
+      "Complete frontier and uniform-clock proof",
+      "proofs/CONSTRUCTIVE_CLOCK_BRIDGE.md"
+    ],
+    [
+      "Complete native matrix, dagger and source-return proof",
+      "proofs/Native_Clock_Torser_Proof.md"
+    ]
+  ],
+  "formal_sources": [
+    [
+      "Portable native Hets/CASL bridge",
+      "formal/hets/Native_Clock_Torser.het"
+    ],
+    [
+      "Actual H24 operational instance",
+      "formal/lean/H24_Operational_Bridge.lean"
+    ],
+    [
+      "Exact reserve/deadline converse",
+      "formal/lean/H24_Operational_Converse.lean"
+    ],
+    [
+      "Frontier credit and direct H24 application",
+      "formal/lean/H24_Clock_Credit.lean"
+    ]
+  ],
+  "fresh_checks": "checks/Bridge_Fresh_Checks.json",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 1853,
+      "sha256": "0c4524e47bd13cbc52f76487c089c2b02f41a8e59655c2fb922bb95a3646501d"
+    },
+    {
+      "path": "Torser_H24_Clock_Bridge.html",
+      "bytes": 135323,
+      "sha256": "a2a7bf30c6e5ed19c5e5701d3189364e8601bde38291e9d5b38d21aee81639a2"
+    },
+    {
+      "path": "Torser_H24_Clock_Bridge.txt",
+      "bytes": 14175,
+      "sha256": "9ed01047afff0f0cbe96d2ec410a2ffda31366ce8241cd0ea4c20262f721110f"
+    },
+    {
+      "path": "Torser_H24_Complete_Bridge_Text.txt",
+      "bytes": 129062,
+      "sha256": "1dcdda090f08858a1d520db22a45d6a36e49d6050f7e01e2d81cb52da537a2a8"
+    },
+    {
+      "path": "checks/Bridge_Clock_Ledger_Receipt.json",
+      "bytes": 4763,
+      "sha256": "5226644d74b9ba12ec422f861c28bcbe8562f0cd2abb1ada14277bb787bae341"
+    },
+    {
+      "path": "checks/Bridge_Fresh_Checks.json",
+      "bytes": 3292,
+      "sha256": "ada985e17f3315c0923d6a07252dc6ba48d69fe681f5a2130e76cc84b7ce8fe9"
+    },
+    {
+      "path": "checks/H24_Clock_Credit.log",
+      "bytes": 1085,
+      "sha256": "d2c50b64fcf1be4e51aa54e07b5038ded50da62096d4406bc1c37483f06605f8"
+    },
+    {
+      "path": "checks/H24_Operational_Bridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checks/H24_Operational_Converse.log",
+      "bytes": 611,
+      "sha256": "63be1df80813af6edeb285fd94987347453a9c57fbad19e5f618c9ea1f2d4fd0"
+    },
+    {
+      "path": "checks/H24_Operational_Dependencies.log",
+      "bytes": 4796,
+      "sha256": "3142ffca9a772e3ba2e23b0fd1225184c5efa65a2e6182ba95c9630b51b42fd6"
+    },
+    {
+      "path": "checks/Hilbert24_Calibrated_Policy.log",
+      "bytes": 1308,
+      "sha256": "47b9a70bc4f9ef31136767feb9c273907e8f68d2684a45a3185fbb5bf17abcaf"
+    },
+    {
+      "path": "checks/bridge_clock_ledger.py",
+      "bytes": 15436,
+      "sha256": "fcd7dbc18cfb42b249be7986f5a46e943b0005004789f646c8b335d78dcfdebb"
+    },
+    {
+      "path": "formal/hets/Native_Clock_Torser.het",
+      "bytes": 25197,
+      "sha256": "2770edc4898b567aa6aac9b8c32078769dca1c16f353397fbee8c655c5275c35"
+    },
+    {
+      "path": "formal/hets/Native_Clock_Torser_Proof.md",
+      "bytes": 20872,
+      "sha256": "324663b45e4144388dfb0c783328c740076f9fd86b45def88b2c622f7c746d5c"
+    },
+    {
+      "path": "formal/hets/README.md",
+      "bytes": 5126,
+      "sha256": "9f19cf7ccbaa962156090bd54d52e549f55927ece8f7cc60a450561e47aabac0"
+    },
+    {
+      "path": "formal/hets/SOURCE_MAP.json",
+      "bytes": 2047,
+      "sha256": "aad38953c9a221936d0a55dc61b25d86a3df20880cb244d684dcc1360a87f22d"
+    },
+    {
+      "path": "formal/hets/VERIFICATION.json",
+      "bytes": 9670,
+      "sha256": "426e870312c14dd1af8d6eb8177df6fe21df30de5770111aeab90c9e40a22fff"
+    },
+    {
+      "path": "formal/hets/build_formal.py",
+      "bytes": 23783,
+      "sha256": "cbc455df2b0fc3a6c3df4f06ec6d287d84f36627480fa321908d011b5e70b693"
+    },
+    {
+      "path": "formal/hets/checks/casl-replay.json",
+      "bytes": 15747,
+      "sha256": "c73e6c42d394a8cda4e876897b8e011cd38cea46240eb17ba567fa4c6f1e3c0f"
+    },
+    {
+      "path": "formal/hets/checks/hets-casl-replay.log",
+      "bytes": 44789,
+      "sha256": "e5cab3af88f77f545a9ac0d16755b4a949879dd26da71f928606500ff50868ff"
+    },
+    {
+      "path": "formal/hets/checks/native-algebra-certificate.json",
+      "bytes": 17712,
+      "sha256": "99efe61658268d765c754e2364a0c4ac39dfda15279ac4f0520defbfc114ec75"
+    },
+    {
+      "path": "formal/hets/checks/replay.commands",
+      "bytes": 8614,
+      "sha256": "ed5701895060adc3b5a1c1024a3e5dde13fac441eff5b84ae37db0ab620a9d63"
+    },
+    {
+      "path": "formal/hets/deps/Native_Shortest_Proof.het",
+      "bytes": 198378,
+      "sha256": "dea01f0201709dbe7d16a95fe1c466b22edc8e3b001fb96605881ae21679c63d"
+    },
+    {
+      "path": "formal/hets/deps/native_algebra/canonical_core.py",
+      "bytes": 7188,
+      "sha256": "6500dd53f573f35155473b50314afa7f7d11a96ddbd0086529fbf982a9a3dc50"
+    },
+    {
+      "path": "formal/hets/deps/native_algebra/inverse_limit_microcosm.py",
+      "bytes": 10983,
+      "sha256": "91451f7878dcb3194b1ed959e61309781d0d503442e57cfc5398f9928938ecd9"
+    },
+    {
+      "path": "formal/hets/deps/native_algebra/noncommutative_native.py",
+      "bytes": 5499,
+      "sha256": "e9e5418896286fcb3f4e86964ea1fdffd82a01750ce1e660e7ce1abeb90478ad"
+    },
+    {
+      "path": "formal/hets/deps/native_algebra/torsor_matrix.py",
+      "bytes": 3784,
+      "sha256": "829031c718d397621fc478515a7af201bf819905bf17aa32245b20af18b51517"
+    },
+    {
+      "path": "formal/hets/replay_casl.py",
+      "bytes": 9828,
+      "sha256": "9aaf8087e5af8e8ffffcf8f53f017dcd48d7b49fc283a1f3e4291856b2a6bbf7"
+    },
+    {
+      "path": "formal/hets/verify_native_algebra.py",
+      "bytes": 6000,
+      "sha256": "690523bc608fcdd2ed74460f64879969ca220275b63871e9052bcab4ddbe49fb"
+    },
+    {
+      "path": "formal/lean/H24_Clock_Credit.lean",
+      "bytes": 11536,
+      "sha256": "b7032efc8730130148be86eb398dd1f0a336338068e403a888fbc5eb62251f74"
+    },
+    {
+      "path": "formal/lean/H24_Clock_Credit.olean",
+      "bytes": 383128,
+      "sha256": "c06dbc14ef0b69d0755c710e17e5635cd5ca43d349d834bbb3c9b12bee21bf37"
+    },
+    {
+      "path": "formal/lean/H24_Operational_Bridge.lean",
+      "bytes": 21745,
+      "sha256": "747a538b0604420108eb00f9d9e496ad57859a0ac4cd96061fb7d878cc91ef83"
+    },
+    {
+      "path": "formal/lean/H24_Operational_Bridge.olean",
+      "bytes": 1070760,
+      "sha256": "d6553e2da19e459b6df417ff4ab157bd4443fb71269a1cb7b665920df472a6ac"
+    },
+    {
+      "path": "formal/lean/H24_Operational_Converse.lean",
+      "bytes": 5668,
+      "sha256": "aeaf213cd981f6dd0d4e4936e6d07583f7b1bef9c84bf99b0c91cc7f2a59fb4a"
+    },
+    {
+      "path": "formal/lean/H24_Operational_Converse.olean",
+      "bytes": 164176,
+      "sha256": "753e3c5d99f521b3feefba8bfbcd90097b3d81cfa4a8fcff213d83e7c22bf7d7"
+    },
+    {
+      "path": "formal/lean/H24_Operational_Dependencies.lean",
+      "bytes": 3617,
+      "sha256": "ff0bc8b5e4262adc8116f5bd21d6ed77623b634f8dfc6855856fb261998417ec"
+    },
+    {
+      "path": "formal/lean/H24_Operational_Dependencies.olean",
+      "bytes": 17384,
+      "sha256": "ef7c6cb8bfc3bd7aeb3e419b46c90324cf01a3481e89443c42bd4960cb73f7d6"
+    },
+    {
+      "path": "formal/lean/Hilbert24_Calibrated_Policy.lean",
+      "bytes": 14412,
+      "sha256": "3bc30739f80e0d67542774a7f7fa434c64e674ce1c97a27233bf3b87fbda6761"
+    },
+    {
+      "path": "formal/lean/Hilbert24_Calibrated_Policy.olean",
+      "bytes": 591464,
+      "sha256": "ff5f46eb37d99057bf312423539c254081ceafad5ba3429116c59ea47d6c8d1e"
+    },
+    {
+      "path": "originals/Reversible_H24_Clock_Adjoints.pdf",
+      "bytes": 372385,
+      "sha256": "3f51cd41255469969d558af019b6e74ce81f6c4782612257e8c4d95f761e7726"
+    },
+    {
+      "path": "proofs/CONSTRUCTIVE_CLOCK_BRIDGE.md",
+      "bytes": 22532,
+      "sha256": "3e3998c78baccc7e5870299b7e85190462940cadcc0307de071637e59cc0144e"
+    },
+    {
+      "path": "proofs/H24_BRIDGE_PROOF.txt",
+      "bytes": 5725,
+      "sha256": "5e5fcf09003ba42a2e133b8534f2b0ec839dd53391c3141aca8217fde4641a20"
+    },
+    {
+      "path": "proofs/H24_OPERATIONAL_BRIDGE_NOTES.txt",
+      "bytes": 12864,
+      "sha256": "994df88773989846bb3b4dba55cea8ba8935f15d0e3c7ebd5f9e0b29a3aef374"
+    },
+    {
+      "path": "proofs/Native_Clock_Torser_Proof.md",
+      "bytes": 20872,
+      "sha256": "324663b45e4144388dfb0c783328c740076f9fd86b45def88b2c622f7c746d5c"
+    },
+    {
+      "path": "provenance/Clock_Source_Map.json",
+      "bytes": 1899,
+      "sha256": "8f6f282ec6df557d50083975d865e858bcb24645617fc8e0d4c3d80e919f221b"
+    },
+    {
+      "path": "provenance/H24_Development_Receipt.json",
+      "bytes": 4114,
+      "sha256": "141740132826a07c8dbbedf04fde62b126571e08df8954f56149882ffefc6838"
+    },
+    {
+      "path": "provenance/H24_New_Sources.json",
+      "bytes": 1444,
+      "sha256": "cab2df618bd386f99b348d626b04710304e3cba7f858fea57a45bff941b2f035"
+    },
+    {
+      "path": "provenance/H24_Original_Dependency.json",
+      "bytes": 371,
+      "sha256": "e7206b419b7d7969360d649dbf2f96fef208d42839eac92181c3b9c05e32b667"
+    },
+    {
+      "path": "provenance/Native_Source_Map.json",
+      "bytes": 2047,
+      "sha256": "aad38953c9a221936d0a55dc61b25d86a3df20880cb244d684dcc1360a87f22d"
+    },
+    {
+      "path": "replay_lean.py",
+      "bytes": 622,
+      "sha256": "779e005cfdd6c73005116bdd0749f5436f979f36235973a7a0e233de0dc91e7d"
+    }
+  ]
+}
