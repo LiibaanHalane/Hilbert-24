@@ -5,3 +5,5 @@ paracollatznormalized hilbert 24 polylogarithm quantized belnap and bayes is the
 a whole proof path integral!
 
 i was playing with 4 by 4 matrices of 2-adic proof ball inverse limits and i found some tesseract and some hexagonal pyramid - send help
+
+This will have P = NP among others before the end of the night
