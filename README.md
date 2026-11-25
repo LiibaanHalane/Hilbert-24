@@ -4,7 +4,7 @@ paracollatznormalized hilbert 24 polylogarithm quantized belnap and bayes is the
 
 a whole proof path integral!
 
-i was playing with 4 by 4 matrices of 2-adic proof ball inverse limits and i found some tesseract and some hexagonal pyramid - send help
+i was playing with 4 by 4 matrices of 2-adic proof ball inverse limits and i found some tesseract and some hexagonal pyramid - send help - oh man that maybe the net of the tesseract with 2 cubes out of 8 overlapping (a [Binary Golay code](https://en.wikipedia.org/wiki/Binary_Golay_code) of some sort) folding to one point and one plane with some distance between them? i don't want to inspire confidence i need to know what this is so i know if i need to go to the hospital so skeptisism is better than grace in this exceptional circumstance.
 
 Hilbert 24 reduces meticulous mathematical proof to appropriate articulation. 
 it is also a constructive proof of Yang Mills mass gap and existance, and 6 other fashionable problems.
