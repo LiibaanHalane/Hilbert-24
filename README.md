@@ -1,4 +1,4 @@
-Mutual definition, Mutual construction, Mutual aid; factors of communication and dependant origination: all Paths, all Tomorrows, their integral through Hilbert 24, a cycle's existence proof, and the Surreal Epistemology of the love of Puns
+Mutual definition, Mutual construction, Mutual destruction, Mutual aid; factors of communication and dependant origination: all Paths, all Tomorrows, their integral through Hilbert 24, a cycle's existence proof, and the Surreal Epistemology of the love of Puns
 
 unfinished I'll have it done by tonight, all cleaned up for review's ease. The arguments and prover are small, that's one of the reason's i hope i can get some feedback on this
 
