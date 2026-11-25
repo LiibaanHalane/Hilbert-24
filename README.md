@@ -1,5 +1,7 @@
 Mutual definition, Mutual construction, Mutual aid; factors of communication and dependant origination: all Paths, all Tomorrows, their integral through Hilbert 24, a cycle's existence proof, and the Surreal Epistemology of the love of Puns
 
+unfinished I'll have it done by tonight, all cleaned up for review's ease. The arguments and prover are small, that's one of the reason's i hope i can get some feedback on this
+
 The H24 constructor now has an executable layer for checking not only what a construction returns, but what it is mathematically forbidden to infer from that return. This permits further clock, covariance and proof-complexity constructions to reuse the established restrictions without repeatedly deriving them.
 
 paracollatznormalized hilbert 24 polylogarithm quantized belnap and bayes is the solution, construct what i mean then think about what it can prove
