@@ -6,6 +6,16 @@ a whole proof path integral!
 
 i was playing with 4 by 4 matrices of 2-adic proof ball inverse limits and i found some tesseract and some hexagonal pyramid - send help
 
+Hilbert 24 reduces meticulous mathematical proof to appropriate articulation. 
+it is also a constructive proof of Yang Mills mass gap and existance, and 6 other fashionable problems.
+i felt the metaphysical implications of Howard-Curry-Lambek were under appreciated as well as the role of physics in metaphysics (and vice versa, i started with dependent origination, determinate negation, and constant contradiction. Some call it paranormal logic. But i was doing something else with it and stumbbled deep down, and here's the hole, a hole in the plato cave, many forms) 
+
+Reversible computation - fredkin-toffoli amortization of computation and the logical necessity of time and triple adjoint functors
+
+
+
+i'm not educated but you'll listen to Ai and it's lean verified and the shortest possible i believe. i got me an ai too. it is not our first and not our last artifact.
+
 This will have P = NP among others before the end of the night
 https://chatgpt.com/share/6b0739a3-35f8-83ea-9889-6d555b402639
 not done yet 
