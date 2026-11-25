@@ -1,0 +1,2452 @@
+{
+  "checks": 185,
+  "status_counts": {
+    "PROVED": 71,
+    "REFUTED": 105,
+    "OPEN": 9
+  },
+  "operations": [
+    "CLOCK.COVARIANT_INPUT_SYMMETRY",
+    "CLOCK.DIMENSIONAL_SPEED_FROM_UNSCALED_LAWS",
+    "CLOCK.DISSIPATION_FREE_MODE",
+    "CLOCK.EXACT_FINITE_CANONICAL_COMMUTATOR",
+    "CLOCK.HOLONOMY_SECTION",
+    "CLOCK.MAXWELL_ENERGY_FLUX",
+    "CLOCK.ORTHOGONAL_READOUT_CAPACITY",
+    "CLOCK.PERIODIC_POSITION_IS_UNWRAPPED_TIME",
+    "CLOCK.POSITIVE_CLASSICAL_VACUUM_FLOOR",
+    "CLOCK.STATIONARY_ONE_EVENT",
+    "CLOCK.STRICT_LOCALITY",
+    "CLOCK.TWO_LEVEL_ORTHOGONALIZATION",
+    "CLOCK.UNIFORM_CYCLE_GAP",
+    "CLOCK.WINDING_MINIMUM",
+    "CLOCK.WRAPPED_READOUT_INJECTIVE",
+    "EVIDENCE.BAYES_NORMALIZER",
+    "EVIDENCE.MARGINALS_DETERMINE_JOINT",
+    "EVIDENCE.THREE_MOMENTS_DETERMINE_GROUND",
+    "H24.CERTIFICATE_VALID",
+    "H24.FINITE_NO_HIT_IMPLIES_NEVER",
+    "H24.FIRST_OWNER_WORK",
+    "H24.ORIGINAL_MINIMUM_RETURN",
+    "H24.PAID_TRACE",
+    "H24.SEMANTIC_IDENTITY_IMPLIES_ZERO_WORK",
+    "H24.UNIFORM_ORIGINAL_BIT_CLOCK",
+    "H24.WORK_BOUNDARY_COVARIANCE",
+    "PHYSICS.EXTERNAL_THEOREM",
+    "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+    "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+    "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+    "PROOF.FULL_SIX_HAAR_INTEGRAL_OVER_Z2",
+    "PROOF.PROJECTOR_IS_SELF_INVERSE",
+    "PROOF.SELF_ADJOINT_INVOLUTION_IMPLIES_NONZERO_FIXED_WITNESS",
+    "PROOF.UNRESTRICTED_BOOLEAN_DIAGONAL_NAMING",
+    "TRANSPORT.COVARIANCE"
+  ],
+  "actual_retained_residual_growth": [
+    {
+      "k": 1,
+      "nodes": 4,
+      "lower_bound": 2
+    },
+    {
+      "k": 2,
+      "nodes": 11,
+      "lower_bound": 4
+    },
+    {
+      "k": 3,
+      "nodes": 25,
+      "lower_bound": 8
+    },
+    {
+      "k": 4,
+      "nodes": 53,
+      "lower_bound": 16
+    },
+    {
+      "k": 5,
+      "nodes": 109,
+      "lower_bound": 32
+    },
+    {
+      "k": 6,
+      "nodes": 221,
+      "lower_bound": 64
+    },
+    {
+      "k": 7,
+      "nodes": 445,
+      "lower_bound": 128
+    },
+    {
+      "k": 8,
+      "nodes": 893,
+      "lower_bound": 256
+    }
+  ],
+  "receipts": [
+    {
+      "operation": "CLOCK.DISSIPATION_FREE_MODE",
+      "scope": "finite positive Gram; given nonzero eigenmode",
+      "status": "PROVED",
+      "evidence": [
+        "Bx=0",
+        "Dx=0",
+        "Ax=i\u03c9x",
+        "\u03c9=1"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.DISSIPATION_FREE_MODE",
+      "scope": "finite positive Gram; given nonzero eigenmode",
+      "status": "REFUTED",
+      "evidence": [
+        "claimed mode fails",
+        "(1, 0, -2/3)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.DISSIPATION_FREE_MODE",
+      "scope": "finite positive Gram; given nonzero eigenmode",
+      "status": "OPEN",
+      "evidence": [
+        "negative square factor premise fails"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.DISSIPATION_FREE_MODE",
+      "scope": "finite positive Gram; given nonzero eigenmode",
+      "status": "OPEN",
+      "evidence": [
+        "zero is not a clock mode"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.DISSIPATION_FREE_MODE",
+      "scope": "finite positive Gram; given nonzero eigenmode",
+      "status": "REFUTED",
+      "evidence": [
+        "claimed mode fails",
+        "(0, 0, -I)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.STATIONARY_ONE_EVENT",
+      "scope": "finite Hamiltonian evolution; stationary density; fixed observable",
+      "status": "PROVED",
+      "evidence": [
+        "[K,rho]=0",
+        "constant=-1",
+        "two-event correlations not constrained to be constant"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.STATIONARY_ONE_EVENT",
+      "scope": "finite Hamiltonian evolution; stationary density; fixed observable",
+      "status": "OPEN",
+      "evidence": [
+        "Hamiltonian/density premise fails"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.HOLONOMY_SECTION",
+      "scope": "finite cycle; initial marked vector; Gram-isometric transitions",
+      "status": "PROVED",
+      "evidence": [
+        "zero energy at every seam",
+        "3 positions",
+        "initial=[0, 1, 0, 0]"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.HOLONOMY_SECTION",
+      "scope": "finite cycle; initial marked vector; Gram-isometric transitions",
+      "status": "REFUTED",
+      "evidence": [
+        "closure seam",
+        "(1, 0, -1)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.HOLONOMY_SECTION",
+      "scope": "finite cycle; initial marked vector; Gram-isometric transitions",
+      "status": "PROVED",
+      "evidence": [
+        "zero energy at every seam",
+        "3 positions",
+        "initial=[1, 0, 0, 0]"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "TRANSPORT.COVARIANCE",
+      "scope": "exact finite Gram operators",
+      "status": "PROVED",
+      "evidence": [
+        "UF=F\u2032U",
+        "does not certify equality of work"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "TRANSPORT.COVARIANCE",
+      "scope": "exact finite Gram operators",
+      "status": "REFUTED",
+      "evidence": [
+        "noncommuting entry (row,basis column,value)",
+        "(1, 1, -2)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "TRANSPORT.COVARIANCE",
+      "scope": "exact finite Gram operators",
+      "status": "OPEN",
+      "evidence": [
+        "Gram isometry premise fails"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.STRICT_LOCALITY",
+      "scope": "one linear update on a line; matrix support",
+      "status": "REFUTED",
+      "evidence": [
+        "outside causal stencil",
+        "(0, 2, 2/11)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.STRICT_LOCALITY",
+      "scope": "one linear update on a line; matrix support",
+      "status": "PROVED",
+      "evidence": [
+        "radius=2"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.STRICT_LOCALITY",
+      "scope": "one linear update on a line; matrix support",
+      "status": "PROVED",
+      "evidence": [
+        "radius=0"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=180",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=171",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=162",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=153",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=144",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=135",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=126",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=117",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=108",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=99",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=90",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=81",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=72",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=63",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=54",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=45",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=36",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=27",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=18",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=9",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=9",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=18",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=27",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=36",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=45",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=54",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=63",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=72",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=81",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=90",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=99",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=108",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=117",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=126",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=135",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=144",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=153",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=162",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=171",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=180",
+        "|sum steps| \u2264 number of steps; constant-sign path attains"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "REFUTED",
+      "evidence": [
+        "wrong lifted endpoint",
+        "8",
+        "9"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.WINDING_MINIMUM",
+      "scope": "unit-cost adjacent signed steps in lifted cycle",
+      "status": "REFUTED",
+      "evidence": [
+        "nonminimal route",
+        "11",
+        "9"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.WRAPPED_READOUT_INJECTIVE",
+      "scope": "uniform Nth-root samples of z^w",
+      "status": "REFUTED",
+      "evidence": [
+        "w=1, v=10",
+        "identical at all 9 samples; distinct lifts"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.WRAPPED_READOUT_INJECTIVE",
+      "scope": "uniform Nth-root samples of z^w",
+      "status": "PROVED",
+      "evidence": [
+        "distinct for this pair at primitive root",
+        "not a global injectivity theorem"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.ORTHOGONAL_READOUT_CAPACITY",
+      "scope": "finite Hilbert space; perfectly distinguishable pure clock states",
+      "status": "REFUTED",
+      "evidence": [
+        "9 mutually orthogonal nonzero states cannot fit in dimension 4"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.ORTHOGONAL_READOUT_CAPACITY",
+      "scope": "finite Hilbert space; perfectly distinguishable pure clock states",
+      "status": "PROVED",
+      "evidence": [
+        "dimension obstruction absent; coordinate basis gives a witness",
+        "not a certificate of a specified device"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.EXACT_FINITE_CANONICAL_COMMUTATOR",
+      "scope": "positive-dimensional finite matrix; [Q,P]=iI",
+      "status": "REFUTED",
+      "evidence": [
+        "tr(commutator)=0, tr(iI)=4*I"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.TWO_LEVEL_ORTHOGONALIZATION",
+      "scope": "two energy eigenlevels; pure state; phase z on the complex unit circle",
+      "status": "PROVED",
+      "evidence": [
+        "p=1/2 and z=-1",
+        "first positive orthogonalizing phase \u03c0; E*T=\u03c0\u0127/2 for fixed gap and Schr\u00f6dinger law"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.TWO_LEVEL_ORTHOGONALIZATION",
+      "scope": "two energy eigenlevels; pure state; phase z on the complex unit circle",
+      "status": "REFUTED",
+      "evidence": [
+        "overlap=1/3",
+        "mean energy fraction=1/3"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.UNIFORM_CYCLE_GAP",
+      "scope": "unit-weight history Laplacian, N=3^d, trivial holonomy",
+      "status": "REFUTED",
+      "evidence": [
+        "depth=2",
+        "\u0394<=40/81<claimed 1"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.UNIFORM_CYCLE_GAP",
+      "scope": "unit-weight history Laplacian, N=3^d, trivial holonomy",
+      "status": "REFUTED",
+      "evidence": [
+        "depth=4",
+        "\u0394<=40/6561<claimed 1/100"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.UNIFORM_CYCLE_GAP",
+      "scope": "unit-weight history Laplacian, N=3^d, trivial holonomy",
+      "status": "REFUTED",
+      "evidence": [
+        "depth=34",
+        "\u0394<=40/278128389443693511257285776231761<claimed 1/1000000000000000000000000000000"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.UNIFORM_CYCLE_GAP",
+      "scope": "unit-weight history Laplacian, N=3^d, trivial holonomy",
+      "status": "OPEN",
+      "evidence": [
+        "upper bound 40/9 does not refute this floor at this depth"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.DIMENSIONAL_SPEED_FROM_UNSCALED_LAWS",
+      "scope": "positive rescalings of length and additive response",
+      "status": "REFUTED",
+      "evidence": [
+        "same additive laws, different rate",
+        "factor=2"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.DIMENSIONAL_SPEED_FROM_UNSCALED_LAWS",
+      "scope": "positive rescalings of length and additive response",
+      "status": "OPEN",
+      "evidence": [
+        "this rescaling does not distinguish the rates; no dimensional calibration supplied"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.MAXWELL_ENERGY_FLUX",
+      "scope": "normalized real classical vacuum; unit direction; local field",
+      "status": "PROVED",
+      "evidence": [
+        "u=1",
+        "directed flux=1",
+        "nonnegative residual=0",
+        "saturates=True"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.MAXWELL_ENERGY_FLUX",
+      "scope": "normalized real classical vacuum; unit direction; local field",
+      "status": "PROVED",
+      "evidence": [
+        "u=1/2",
+        "directed flux=0",
+        "nonnegative residual=1/2",
+        "saturates=False"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.POSITIVE_CLASSICAL_VACUUM_FLOOR",
+      "scope": "unconstrained classical vacuum amplitudes; no fixed signal flux",
+      "status": "REFUTED",
+      "evidence": [
+        "amplitude scale=2^(-34)",
+        "positive energy=1/295147905179352825856<floor 1/100000000000000000000",
+        "fixed-flux and quantum constraints not addressed"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^2 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=2 nonzero mod 2^2, x\u00b2=0 mod 2^2"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^3 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=4 nonzero mod 2^3, x\u00b2=0 mod 2^3"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^4 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=4 nonzero mod 2^4, x\u00b2=0 mod 2^4"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^5 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=8 nonzero mod 2^5, x\u00b2=0 mod 2^5"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^6 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=8 nonzero mod 2^6, x\u00b2=0 mod 2^6"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^7 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=16 nonzero mod 2^7, x\u00b2=0 mod 2^7"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^8 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=16 nonzero mod 2^8, x\u00b2=0 mod 2^8"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^9 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=32 nonzero mod 2^9, x\u00b2=0 mod 2^9"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^10 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=32 nonzero mod 2^10, x\u00b2=0 mod 2^10"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^11 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=64 nonzero mod 2^11, x\u00b2=0 mod 2^11"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^12 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=64 nonzero mod 2^12, x\u00b2=0 mod 2^12"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^13 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=128 nonzero mod 2^13, x\u00b2=0 mod 2^13"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^14 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=128 nonzero mod 2^14, x\u00b2=0 mod 2^14"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^15 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=256 nonzero mod 2^15, x\u00b2=0 mod 2^15"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^16 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=256 nonzero mod 2^16, x\u00b2=0 mod 2^16"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^17 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=512 nonzero mod 2^17, x\u00b2=0 mod 2^17"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^18 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=512 nonzero mod 2^18, x\u00b2=0 mod 2^18"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^19 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=1024 nonzero mod 2^19, x\u00b2=0 mod 2^19"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^20 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=1024 nonzero mod 2^20, x\u00b2=0 mod 2^20"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^21 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=2048 nonzero mod 2^21, x\u00b2=0 mod 2^21"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^22 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=2048 nonzero mod 2^22, x\u00b2=0 mod 2^22"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^23 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=4096 nonzero mod 2^23, x\u00b2=0 mod 2^23"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^24 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=4096 nonzero mod 2^24, x\u00b2=0 mod 2^24"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^25 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=8192 nonzero mod 2^25, x\u00b2=0 mod 2^25"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^26 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=8192 nonzero mod 2^26, x\u00b2=0 mod 2^26"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^27 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=16384 nonzero mod 2^27, x\u00b2=0 mod 2^27"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^28 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=16384 nonzero mod 2^28, x\u00b2=0 mod 2^28"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^29 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=32768 nonzero mod 2^29, x\u00b2=0 mod 2^29"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^30 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=32768 nonzero mod 2^30, x\u00b2=0 mod 2^30"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^31 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=65536 nonzero mod 2^31, x\u00b2=0 mod 2^31"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.FINITE_APERTURE_IMPLIES_GLOBAL_ZERO",
+      "scope": "Z2 reduction at one finite cut",
+      "status": "REFUTED",
+      "evidence": [
+        "0 and 2^32 have identical residue but differ globally"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.DYADIC_SUM_SQUARES_FAITHFUL",
+      "scope": "finite residue ring; nontrivial vector",
+      "status": "REFUTED",
+      "evidence": [
+        "x=65536 nonzero mod 2^32, x\u00b2=0 mod 2^32"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.PROJECTOR_IS_SELF_INVERSE",
+      "scope": "explicit finite Gram projector",
+      "status": "REFUTED",
+      "evidence": [
+        "idempotent and involutive implies identity",
+        "(0, 0, -1)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.PROJECTOR_IS_SELF_INVERSE",
+      "scope": "explicit finite Gram projector",
+      "status": "PROVED",
+      "evidence": [
+        "P=I"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "EVIDENCE.BAYES_NORMALIZER",
+      "scope": "finite exact nonnegative weights with marks",
+      "status": "REFUTED",
+      "evidence": [
+        "zero total mass; conditioning undefined"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "EVIDENCE.BAYES_NORMALIZER",
+      "scope": "finite exact nonnegative weights with marks",
+      "status": "PROVED",
+      "evidence": [
+        "normalizer=3",
+        "('1/3', '2/3')"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "EVIDENCE.MARGINALS_DETERMINE_JOINT",
+      "scope": "two Boolean clause evidence events",
+      "status": "REFUTED",
+      "evidence": [
+        "same marginals (1/2,1/2)",
+        "joint (x,x)=1/2; joint (x,not x)=0"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "EVIDENCE.THREE_MOMENTS_DETERMINE_GROUND",
+      "scope": "fixed q=2/3, nonnegative integer histograms",
+      "status": "REFUTED",
+      "evidence": [
+        "moments=(Fraction(4216, 27), Fraction(408, 1), Fraction(11752, 9))",
+        "ground counts 8, 0",
+        "histogram witnesses; no general compression theorem inferred"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.FINITE_NO_HIT_IMPLIES_NEVER",
+      "scope": "unrestricted binary first-hit streams",
+      "status": "REFUTED",
+      "evidence": [
+        "common prefix length=64",
+        "extensions 0^\u221e and 10^\u221e after prefix disagree about eventual hit"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.UNRESTRICTED_BOOLEAN_DIAGONAL_NAMING",
+      "scope": "total naming of all maps A\u2192Bool by evaluation A\u00d7A\u2192Bool",
+      "status": "REFUTED",
+      "evidence": [
+        "diagonal g(x)=not eval(x,x)",
+        "at a name for g: b=not b; both Boolean values refute it"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.SEMANTIC_IDENTITY_IMPLIES_ZERO_WORK",
+      "scope": "explicit two-step reversible identity circuit",
+      "status": "REFUTED",
+      "evidence": [
+        "two bit flips implement identity",
+        "declared local work=2; doing nothing work=0",
+        "cost reduction requires an admitted equivalence and paid acquisition"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.FIRST_OWNER_WORK",
+      "scope": "finite acquired owner ledger; exact rational Haar integral",
+      "status": "PROVED",
+      "evidence": [
+        "work=14",
+        "owners=2",
+        "repeat references require separate actual charges"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.FIRST_OWNER_WORK",
+      "scope": "finite acquired owner ledger; exact rational Haar integral",
+      "status": "REFUTED",
+      "evidence": [
+        "duplicate first owner",
+        "a"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.WORK_BOUNDARY_COVARIANCE",
+      "scope": "explicit finite directed edges with two nonnegative charges",
+      "status": "PROVED",
+      "evidence": [
+        "all edge charge differences are exact potential differences",
+        "closed paths preserve charge; open paths retain endpoint term"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.WORK_BOUNDARY_COVARIANCE",
+      "scope": "explicit finite directed edges with two nonnegative charges",
+      "status": "REFUTED",
+      "evidence": [
+        "coboundary residual",
+        "('b', 'a', 1)"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.PAID_TRACE",
+      "scope": "explicit finite transition system and declared charges; no universal runtime inference",
+      "status": "PROVED",
+      "evidence": [
+        "work=5",
+        "initial=5",
+        "remaining=0"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.PAID_TRACE",
+      "scope": "explicit finite transition system and declared charges; no universal runtime inference",
+      "status": "REFUTED",
+      "evidence": [
+        "unpaid or disconnected step",
+        "Tick(before='input', after='acquired', charge=2, reserve_before=5, reserve_after=4, kind='acquire')"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.PAID_TRACE",
+      "scope": "explicit finite transition system and declared charges; no universal runtime inference",
+      "status": "REFUTED",
+      "evidence": [
+        "no checked terminal in supplied finite semantics",
+        "acquired"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.PAID_TRACE",
+      "scope": "explicit finite transition system and declared charges; no universal runtime inference",
+      "status": "REFUTED",
+      "evidence": [
+        "transition not admitted",
+        "Tick(before='acquired', after='checked', charge=1, reserve_before=3, reserve_after=0, kind='verify')"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.UNIFORM_ORIGINAL_BIT_CLOCK",
+      "scope": "all original input lengths, one fixed implementation",
+      "status": "OPEN",
+      "evidence": [
+        "requires source theorem of uniform coverage, actual bit-work accounting, and terminal soundness; finite samples cannot discharge"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "PHYSICS.EXTERNAL_THEOREM",
+      "scope": "original physical/thermodynamic-limit model",
+      "status": "OPEN",
+      "evidence": [
+        "Ogami\u2013Tajima v2 full thermodynamic-limit no-go",
+        "requires authenticated source proof and exact model binding, not a Boolean token"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=1",
+        "DAG nodes=2"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.CERTIFICATE_VALID",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "REFUTED",
+      "evidence": [
+        "invalid self-witnessing adjunction"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=1",
+        "ground count=2",
+        "DAG nodes=2"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.CERTIFICATE_VALID",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "REFUTED",
+      "evidence": [
+        "invalid self-witnessing adjunction"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=1",
+        "ground count=1",
+        "DAG nodes=1"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.CERTIFICATE_VALID",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "REFUTED",
+      "evidence": [
+        "invalid self-witnessing adjunction"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=1",
+        "DAG nodes=4"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "H24.CERTIFICATE_VALID",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "REFUTED",
+      "evidence": [
+        "invalid self-witnessing adjunction"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=4"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 2 variables, 2 clauses",
+        "distinct residuals at x-prefix boundary = 2^1",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=11"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 4 variables, 6 clauses",
+        "distinct residuals at x-prefix boundary = 2^2",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=25"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 6 variables, 10 clauses",
+        "distinct residuals at x-prefix boundary = 2^3",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=53"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 8 variables, 14 clauses",
+        "distinct residuals at x-prefix boundary = 2^4",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=109"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 10 variables, 18 clauses",
+        "distinct residuals at x-prefix boundary = 2^5",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=221"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 12 variables, 22 clauses",
+        "distinct residuals at x-prefix boundary = 2^6",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=445"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 14 variables, 26 clauses",
+        "distinct residuals at x-prefix boundary = 2^7",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "H24.ORIGINAL_MINIMUM_RETURN",
+      "scope": "original finite 3-CNF, minimum charge and all ground marks",
+      "status": "PROVED",
+      "evidence": [
+        "minimum=0",
+        "ground count=2",
+        "DAG nodes=893"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FIXED_ORDER_POLYNOMIAL_CONTRACTION",
+      "scope": "connected equality-chain CNF; explicit normalized residual DAG, x-first",
+      "status": "REFUTED",
+      "evidence": [
+        "input family has 16 variables, 30 clauses",
+        "distinct residuals at x-prefix boundary = 2^8",
+        "family refutes uniform polynomial bound for this exact enumeration policy; not all algorithms"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.COVARIANT_INPUT_SYMMETRY",
+      "scope": "finite exact linear state/observable space, one specified symmetry",
+      "status": "PROVED",
+      "evidence": [
+        "U T x = T U x = T x",
+        "no new asymmetry in this state; no claim about two-event correlations"
+      ],
+      "belnap": [
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "CLOCK.COVARIANT_INPUT_SYMMETRY",
+      "scope": "finite exact linear state/observable space, one specified symmetry",
+      "status": "OPEN",
+      "evidence": [
+        "input symmetry premise fails"
+      ],
+      "belnap": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "PROOF.FULL_SIX_HAAR_INTEGRAL_OVER_Z2",
+      "scope": "normalized group average in the original native faithful S3 representation",
+      "status": "REFUTED",
+      "evidence": [
+        "C3 average is integral (3 is a unit)",
+        "S3 average has native entry b=1/2, not in Z2",
+        "use rational Haar or retain undivided sum"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "CLOCK.PERIODIC_POSITION_IS_UNWRAPPED_TIME",
+      "scope": "position observation on a finite cycle, no lifted winding mark",
+      "status": "REFUTED",
+      "evidence": [
+        "two distinct lifted positions 1 and 10",
+        "same residue 1"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "PROOF.SELF_ADJOINT_INVOLUTION_IMPLIES_NONZERO_FIXED_WITNESS",
+      "scope": "positive real original native four-dimensional Gram space",
+      "status": "REFUTED",
+      "evidence": [
+        "A=-I, A\u2020=A=A^-1",
+        "Fix(A)={0}; no nonzero witness"
+      ],
+      "belnap": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scope": "exact finite certificates and written structural theorems, not a fresh Lean/Hets or continuum theorem replay"
+}
