@@ -14,7 +14,7 @@ Reversible computation - fredkin-toffoli amortization of computation and the log
 
 
 
-i'm not educated but you'll listen to Ai and it's lean verified and the shortest possible i believe. i got me an ai too. it is not our first and not our last artifact.
+i'm not educated but you'll listen to Ai and it's lean verified and the shortest possible i believe. i got me an ai too. it is not our first and not our last artifact. - i only mean this later
 
 This will have P = NP among others before the end of the night
 https://chatgpt.com/share/6b0739a3-35f8-83ea-9889-6d555b402639
