@@ -27,7 +27,7 @@ https://chatgpt.com/share/6b075d72-d7d4-83ea-8eb1-745bdac027c8
 https://chatgpt.com/share/6b0771b8-b3c8-83e9-970b-f022ef2caf3e
 https://chatgpt.com/share/6b077b61-619c-83ea-8b20-dbc5792f965c
 
-You do not estimate, you construct with Hilbert 24 as the proof of the adjoint of the requirements
+You do not estimate, you construct with Hilbert 24 from the proof of the adjoint of the requirements and the requirements, i'm sure there's some analogy between reflectance, projection, and generation that becomes literal there
 
 pins, when they fall, that's how you get profinite poles? probability and disc and vertical point - Peirce pierce perice. per ice, per ?/i?c?e? - factoring out a linear equation, beta reduction, guard, conditions, 3 signs, language,  can we get all the fundamental things we need from pi, i, c, and e (given the above)?
 
