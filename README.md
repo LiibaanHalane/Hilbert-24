@@ -27,6 +27,7 @@ https://chatgpt.com/share/6b075d72-d7d4-83ea-8eb1-745bdac027c8
 https://chatgpt.com/share/6b0771b8-b3c8-83e9-970b-f022ef2caf3e
 https://chatgpt.com/share/6b077b61-619c-83ea-8b20-dbc5792f965c
 https://chatgpt.com/share/6b07a9b3-141c-83e9-b934-d6b2000ecd56
+https://chatgpt.com/share/6b07c4e2-a2e0-83ea-8d77-a05e4c9ace86
 
 You do not estimate, you construct with Hilbert 24 from the proof of the adjoint of the requirements and the requirements, i'm sure there's some analogy between reflectance, projection, and generation that becomes literal there
 
